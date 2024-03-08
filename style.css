@@ -2616,7 +2616,7 @@ body.prevent-background-scroll {
 }
 .promo .main_container a:hover {
   background-color: #e73700;
-  
+
 }
 
 .text_main h1 {
@@ -2687,9 +2687,11 @@ body.prevent-background-scroll {
 }
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
-
+ text-align: center;
+ margin: 20px 0;
+ font-size: 0.8em;
+ font-weight: 500;
+ color: #5a6674;
 }
 
 
