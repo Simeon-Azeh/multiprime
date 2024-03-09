@@ -329,9 +329,31 @@ html {
   font-weight: 500;
 }
 
+@media (min-width: 1024px) {
+  .navbar .dropdownMega {
+    position: inherit !important;
+  }
+}
 
+@media (min-width: 1024px) {
+  .navbar .mega-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-out 0s, visibility 0.1s linear 0s;
+  }
+}
 
-
+@media (max-width: 1023px) {
+  .navbar .mega-menu {
+    position: relative;
+    display: none;
+    padding-left: 0;
+  }
+}
 
 .navbar .mega-menu .content {
   display: grid;
@@ -343,6 +365,25 @@ html {
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.05);
 }
 
+@media (max-width: 1023px) {
+  .navbar .mega-menu .content {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar .mega-menu .content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar .mega-menu .content .col {
+    padding: 0;
+    width: 100%;
+  }
+}
+
 .navbar .category .content .col .img-wrapper {
   margin: 1rem 0;
 }
@@ -351,6 +392,11 @@ html {
   grid-template-columns: repeat(1, 1fr);
 }
 
+@media (min-width: 1024px) {
+  .navbar .blog .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .navbar .blog .content .col .img-wrapper {
   margin-bottom: 1rem;
@@ -410,7 +456,11 @@ html {
   padding-left: 0.625rem;
 }
 
-
+@media (max-width: 1023px) {
+  .navbar .content .col .menu-title {
+    font-size: 0.875rem;
+  }
+}
 
 .navbar .content .col p {
   margin-top: 0.625rem;
@@ -423,6 +473,21 @@ html {
 .navbar .content .col .mega-links {
   padding-left: 1rem;
   border-left: 1px solid #3c3c3c;
+}
+
+@media (max-width: 1023px) {
+  .navbar .content .col .mega-links {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .navbar .content .col .mega-links li {
+    margin: 0;
+  }
+
+  .navbar .content .col .mega-links li a {
+    padding: 0 0.5rem;
+  }
 }
 
 .navbar .content .col .mega-links li {
@@ -1281,6 +1346,11 @@ h3 {
   }
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
   h2 {
     margin-bottom: 20px;
   }
@@ -1423,7 +1493,7 @@ h3 {
 }
 
 .featured-artist {
-  min-height: 20vh;
+  min-height: 100vh;
   min-width: 800px;
 }
 
@@ -1445,11 +1515,6 @@ h3 {
   justify-content: space-between;
   flex-direction: row-reverse;
   cursor: pointer;
-}
-.images-leaning {
-    
-  display: none;
-
 }
 
 .images-basic>div {
@@ -3012,6 +3077,18 @@ body.prevent-background-scroll {
 }
 
 
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  body {
+    font-size: 70%;
+  }
+}
+
 
 
 /* Reviews */
@@ -3324,20 +3401,19 @@ body.prevent-background-scroll {
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
+ position: absolute;
+ align-items: center;
+ justify-content: center;
+ margin: 20px auto;
   bottom: 20px;
   right: 35%;
   width: 430px;
   border: 1px solid #f1f1f1;
   z-index: 3000;
   background-color: white;
-
+  
 
 }
-
 .feeback_btns {
   display: flex;
   justify-content: space-between;
@@ -3346,14 +3422,14 @@ body.prevent-background-scroll {
 
 /* Add styles to the form container */
 .form-container {
-
+ 
   padding: 20px;
-
+  
 }
 
 /* Full-width input fields */
 .form-container input,
-.form-container textarea {
+ .form-container textarea{
   width: 100%;
   padding: 6px 10px;
   margin: 5px 0 22px 0;
@@ -3368,7 +3444,7 @@ body.prevent-background-scroll {
 
 /* When the inputs get focus, do something */
 .form-container input:focus {
-  border: 1px solid var(--secondary-color);
+ border: 1px solid var(--secondary-color);
   outline: none;
 }
 
@@ -3495,7 +3571,6 @@ body.prevent-background-scroll {
     justify-content: center;
   }
 
-  
   .featured_info {
 
     flex-direction: column;

@@ -1,115 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.getElementById("menu");
-    const closeBtn = document.getElementById("close");
-    const mobileNav = document.querySelector(".mobile_nav");
 
-    menuBtn.addEventListener("click", function () {
-        mobileNav.style.display = "block";
-    });
-
-    closeBtn.addEventListener("click", function () {
-        mobileNav.style.display = "none";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const dropdownBtns = document.querySelectorAll(".dropdown-btn");
-
-    dropdownBtns.forEach(btn => {
-        btn.addEventListener("click", function () {
-            const dropdown = this.parentElement;
-            dropdown.classList.toggle("active");
-        });
-    });
-
-    const closeBtn = document.getElementById("close");
-    const mobileNav = document.querySelector(".mobile_nav");
-
-    closeBtn.addEventListener("click", function () {
-        mobileNav.style.display = "none";
-    });
-});
-
-
-
-// Plain vanilla JavaScript version of jQuery's slideToggle(), slideUp(), and slideDown() functions.
-HTMLElement.prototype.slideToggle = function (duration, callback) {
-    if (this.clientHeight === 0) {
-      _s(this, duration, callback, true);
-    } else {
-      _s(this, duration, callback);
-    }
-  };
-  
-  HTMLElement.prototype.slideUp = function (duration, callback) {
-    _s(this, duration, callback);
-  };
-  
-  HTMLElement.prototype.slideDown = function (duration, callback) {
-    _s(this, duration, callback, true);
-  };
-  
-  function _s(el, duration, callback, isDown) {
-    if (typeof duration === "undefined") duration = 400;
-    if (typeof isDown === "undefined") isDown = false;
-  
-    el.style.overflow = "hidden";
-    if (isDown) el.style.display = "block";
-  
-    var elStyles = window.getComputedStyle(el);
-  
-    var elHeight = parseFloat(elStyles.getPropertyValue("height"));
-    var elPaddingTop = parseFloat(elStyles.getPropertyValue("padding-top"));
-    var elPaddingBottom = parseFloat(elStyles.getPropertyValue("padding-bottom"));
-    var elMarginTop = parseFloat(elStyles.getPropertyValue("margin-top"));
-    var elMarginBottom = parseFloat(elStyles.getPropertyValue("margin-bottom"));
-  
-    var stepHeight = elHeight / duration;
-    var stepPaddingTop = elPaddingTop / duration;
-    var stepPaddingBottom = elPaddingBottom / duration;
-    var stepMarginTop = elMarginTop / duration;
-    var stepMarginBottom = elMarginBottom / duration;
-  
-    var start;
-  
-    function step(timestamp) {
-      if (start === undefined) start = timestamp;
-  
-      var elapsed = timestamp - start;
-  
-      if (isDown) {
-        el.style.height = stepHeight * elapsed + "px";
-        el.style.paddingTop = stepPaddingTop * elapsed + "px";
-        el.style.paddingBottom = stepPaddingBottom * elapsed + "px";
-        el.style.marginTop = stepMarginTop * elapsed + "px";
-        el.style.marginBottom = stepMarginBottom * elapsed + "px";
-      } else {
-        el.style.height = elHeight - stepHeight * elapsed + "px";
-        el.style.paddingTop = elPaddingTop - stepPaddingTop * elapsed + "px";
-        el.style.paddingBottom =
-          elPaddingBottom - stepPaddingBottom * elapsed + "px";
-        el.style.marginTop = elMarginTop - stepMarginTop * elapsed + "px";
-        el.style.marginBottom =
-          elMarginBottom - stepMarginBottom * elapsed + "px";
-      }
-  
-      if (elapsed >= duration) {
-        el.style.height = "";
-        el.style.paddingTop = "";
-        el.style.paddingBottom = "";
-        el.style.marginTop = "";
-        el.style.marginBottom = "";
-        el.style.overflow = "";
-        if (!isDown) el.style.display = "none";
-        if (typeof callback === "function") callback();
-      } else {
-        window.requestAnimationFrame(step);
-      }
-    }
-  
-    window.requestAnimationFrame(step);
-  }
-  
   // JS
   const overlays = document.querySelector(".overlay");
   const body = document.querySelector("body");
@@ -125,76 +14,55 @@ HTMLElement.prototype.slideToggle = function (duration, callback) {
       elem.classList.add("dropdown");
     }
   });
-  
-  function toggle() {
-    // disable overflow body
-    body.classList.toggle("overflow");
-    // dark background
-    overlays.classList.toggle("overlay--active");
-    // add open class
-    menuBtn.classList.toggle("open");
-    menuItems.classList.toggle("open");
-  }
-  
-  // Open Menu Mobile
-  menuBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggle();
-  });
-  
-  // Closes when the Esc key is pressed
-  window.onkeydown = function (event) {
-    const key = event.key; // const {key} = event; in ES6+
-    const active = menuItems.classList.contains("open");
-    if (key === "Escape" && active) {
-      toggle();
-    }
-  };
-  
-  // Closes when clicked outside the area
-  document.addEventListener("click", (e) => {
-    let target = e.target,
-      its_menu = target === menuItems || menuItems.contains(target),
-      its_hamburger = target === menuBtn,
-      menu_is_active = menuItems.classList.contains("open");
-    if (!its_menu && !its_hamburger && menu_is_active) {
-      toggle();
-    }
-  });
-  
-  
-  // Mobile menu expand
-  const expandBtn = document.querySelectorAll(".expand-btn");
-  expandBtn.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      if (window.innerWidth <= 1024) {
-        // Prevent Default Anchor Click Behavior
-        event.preventDefault();
-        btn.classList.toggle("open");
-        btn.nextElementSibling.slideToggle(300);
-      }
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const closeIcon = document.querySelector('.ri-close-circle-line');
+    const dropdowns = document.querySelectorAll('.mobile-dropdown');
+
+    menuBtn.addEventListener('click', function() {
+        mobileNav.classList.toggle('mobile-nav-open');
+
+        // Apply animation to mobile navigation
+        mobileNav.style.transition = 'transform 0.3s ease-in-out';
+        if (mobileNav.classList.contains('mobile-nav-open')) {
+            mobileNav.style.transform = 'translateX(0)';
+        } else {
+            mobileNav.style.transform = 'translateX(-100%)';
+        }
+
+        // Close other dropdowns when mobile nav is opened
+        dropdowns.forEach(function(otherDropdown) {
+            otherDropdown.classList.remove('open');
+        });
     });
-  });
+
+    closeIcon.addEventListener('click', function() {
+        mobileNav.classList.remove('mobile-nav-open');
+
+        // Apply animation to close the mobile navigation
+        mobileNav.style.transition = 'transform 0.3s ease-in-out';
+        mobileNav.style.transform = 'translateX(-100%)';
+    });
+
+    dropdowns.forEach(function(dropdown) {
+        const parentItem = dropdown.querySelector('.mobile-menu-item');
+
+        parentItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            dropdown.classList.toggle('open');
+
+            // Close other dropdowns when a dropdown is opened
+            dropdowns.forEach(function(otherDropdown) {
+                if (otherDropdown !== dropdown && otherDropdown.classList.contains('open')) {
+                    otherDropdown.classList.remove('open');
+                }
+            });
+        });
+    });
+});
+
   
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 1024) {
-      // Off menu mobile on desktop
-      if (menuBtn.classList.contains("open")) {
-        toggle();
-      }
-      // Change arrow menu on Desktop
-      for (var i = 0; i < expandBtn.length; i += 1) {
-        expandBtn[i].classList.remove("open");
-      }
-      // Off SlideToggle Menu on Desktop
-      const dropdownMenu = document.querySelectorAll(
-        ".menu-items .dropdown-menu"
-      );
-      for (var i = 0; i < dropdownMenu.length; i += 1) {
-        dropdownMenu[i].style.display = "";
-      }
-    }
-  });
     // Hero section
 
     document.addEventListener("DOMContentLoaded", function() {

@@ -1,5 +1,87 @@
 /* For smaller screens */
+.mobile-nav {
+    display: none; /* Initially hide the mobile navbar */
+}
+.menu-btn i {
+    font-size: 2.4em !important;
+    font-weight: 500;
+   
+}
+
+.mobile-menu {
+    list-style: none;
+    padding: 60px 40px;
+    margin: 0;
+}
+
+.mobile-menu li a {
+    font-size: 1.8em;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.mobile-menu-item {
+    display: block;
+    padding: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.mobile-dropdown {
+    position: relative;
+}
+
+.mobile-submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #eee;
+    width: 80vw; /* Cover the entire viewport width */
+    border-radius: 4px;
+    z-index: 999;
+}
+
+.mobile-submenu .mobile-menu-item {
+    padding: 10px 20px;
+}
+
+.mobile-nav-open {
+    display: block; /* Show the mobile navbar when open */
+    position: fixed; /* Fix the navigation menu position */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cover the entire viewport width */
+    height: 100%; /* Cover the entire viewport height */
+    background-color: #fff; /* Semi-transparent background overlay */
+    z-index: 9999; /* Ensure the navigation menu is above other content */
+}
+
+.mobile-dropdown.open .mobile-submenu {
+    display: block;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3em;
+    color: var(--secondary-color); /* Adjust color as needed */
+    z-index: 1000; /* Ensure the icon is above other content */
+}
+
+.mobile-nav-header {
+    position: relative;
+}
+
+
+
 @media only screen and (max-width: 1024px) {
+    .menu-btn {
+        display: block;
+    }
     .artist {
         padding: 20px;
     }
