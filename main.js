@@ -225,6 +225,8 @@ HTMLElement.prototype.slideToggle = function (duration, callback) {
   
       setInterval(changeMedia, 5000); // Change background every 5 seconds
   });
+
+  
   
 
   //main section
