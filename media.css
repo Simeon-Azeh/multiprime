@@ -143,6 +143,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; /* Adjust as needed */
+        padding-left: 5em;
     
     }
     .pricingTable-firstTable_table {
@@ -156,6 +157,7 @@
         transition: all 0.3s ease;
         border-radius: 5px;
     }
+
     .pricingTable-firstTable_table:nth-of-type(2) {
         width: 500px !important;
     }
@@ -178,5 +180,131 @@
         position: relative;
         margin-top: 20px;
     }
- 
+    .beer {
+        width: 203px !important;
+    }
+    .carousel-wrap {
+        width: 322px !important;
+    }
+    .feedback_form {
+        display: flex;
+        position: relative;
+        margin-top: -43px;
+    }.feedback_form {
+        margin-top: -43px;
+    }
+    body > footer > div > div.follow {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .hero_text h1 {
+        margin-bottom: 20px;
+    }
+}
+    @media only screen and (max-width: 667px) {
+
+    #hero {
+        height: 80vh;
+    }
+    .hero_text {
+        margin-top: -80px;
+    }
+    .artist {
+        padding: 0px;
+    }
+    
+    .main_artist_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the cards */
+    }
+    
+    .artist_card {
+        width: calc(100% - 20px); /* Set width to 100% minus padding */
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+    .artist .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .artist .container .header {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     text-align: center;
+    }
+    .artist .container .header a {
+        display: none;
+    }
+    .artist .container .more_btn {
+        display: block;
+        text-align: center;
+
+    }
+    .artist .more_btn {
+        background: var(--secondary-color);
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 40px 20px;
+
+    }
+    .info h1 {
+        font-size: 1.2rem !important;
+        font-weight: 600;
+
+    }
+    .beer {
+        width: 160px !important;
+    }
+    .images-basic {
+        width: 347px;
+        padding: 5em 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        cursor: pointer;
+    }
+    .info p {
+         font-size: 0.9rem; 
+    }
+    .pricingTable-firstTable {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 2em;
+    }
+    .pricingTable>.pricingTable-title {
+        text-align: center;
+        color: #6e768d;
+        font-size: 1.4em !important;
+      
+    }
+    .pricingTable>.pricingTable-subtitle {
+        text-align: center;
+        color: #b4bdc6;
+        font-size: 1em;
+        letter-spacing: 0.04em;
+        margin-bottom: 60px;
+    }
+    .form-popup {
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        bottom: 20px;
+        right: 15%;
+        width: 280px;
+        border: 1px solid #f1f1f1;
+        z-index: 3000;
+        background-color: white;
+    }
+    .carousel-wrap {
+        width: 60px !important;
+    }
+    .promo .main_container {
+        padding: 20px 40px;
+    }
+   
 }

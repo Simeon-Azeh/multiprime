@@ -545,6 +545,7 @@
                  </div>
             </div>
         </div>
+        <button class="more_btn">See More</button>
     </section>
 
     <section id="intro">
@@ -674,6 +675,7 @@
                  </div>
             </div>
         </div>
+        <button class="more_btn">See More</button>
     </section>
 
 
@@ -3881,10 +3883,12 @@
         ScrollReveal().reveal('.hero_text', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
-        ScrollReveal().reveal('.wrapper, .line-title', { origin: 'right', distance: '50px', duration: 1000, delay: 500 });
+        ScrollReveal().reveal('.wrapper ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+
+        ScrollReveal().reveal('.hero_text', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.owl-carousel' from the bottom with a delay of 700ms
-        ScrollReveal().reveal('.owl-carousel', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+        ScrollReveal().reveal('.owl-carousel, .custom-carousel', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
 
         $(".custom-carousel").owlCarousel({
             autoWidth: true,
