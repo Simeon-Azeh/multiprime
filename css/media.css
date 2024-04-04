@@ -82,6 +82,9 @@
     .menu-btn {
         display: block;
     }
+    .more_btn {
+        display: block;
+    }
     .artist {
         padding: 20px;
     }
@@ -306,5 +309,57 @@
     .promo .main_container {
         padding: 20px 40px;
     }
-   
+    .title_card {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        position: relative;
+        margin-top: 5px;
+         margin-bottom: 0px; 
+    }
+    .title_card h1 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+    .info_card p {
+        margin: 0;
+        font-size: 1.2em;
+        
+    }
+    .title_card p {
+        font-size: 1em;
+        
+      
+    }
+    .title_card button {
+         font-size: 1.6em; 
+      
+    }
+    .site__title {
+        font-size: 26px;
+        font-weight: 500;
+        color: var(--primary-color);
+       
+    }
+    .sect {
+         padding: 20px 0 0 0; 
+        position: relative;
+    }
+    .career_title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .career_sub {
+        font-size: 14px;
+        color: #c7cbff;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    .btn--white {
+        margin-left: 20px;
+    }
 }

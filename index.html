@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
         integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,9 +25,9 @@
             <a href="index.html"><img src="assets/multiprime2.png" alt=""></a>
         </div>
         <ul class="menu-items">
-            <li><a href="#" class="menu-item">Feed</a></li>
+            <li><a href="#" class="menu-item active">Feed</a></li>
             <li>
-                <a href="facebook.com" class="menu-item">Music</a>
+                <a href="/mainpages/music.html" class="menu-item">Music</a>
                 <ul class="dropdown-menu">
                     <li><a href="#" class="menu-item">Releases</a></li>
                     <li><a href="#" class="menu-item">Beats</a></li>
@@ -244,8 +244,9 @@
         <ul class="mobile-menu">
             <li><a href="#" class="mobile-menu-item">Feed</a></li>
             <li class="mobile-dropdown">
-                <a href="#" class="mobile-menu-item">Music<i class="ri-arrow-drop-down-line"></i></a>
+                <a href="/mainpages/music.html" class="mobile-menu-item">Music<i class="ri-arrow-drop-down-line"></i></a>
                 <ul class="mobile-submenu">
+                    <li><a href="/mainpages/music.html" class="mobile-menu-item">Music</a></li>
                     <li><a href="#" class="mobile-menu-item">Releases</a></li>
                     <li><a href="#" class="mobile-menu-item">Beats</a></li>
                     <li><a href="#" class="mobile-menu-item">Profile</a></li>
@@ -3948,96 +3949,96 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+        <script>
 
 
-        // Reveal '.hero_text' from the left
-        ScrollReveal().reveal('.hero_text', { origin: 'left', distance: '50px', duration: 1000 });
-
-        // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
-        ScrollReveal().reveal('.wrapper ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
-
-        ScrollReveal().reveal('.hero_text', { origin: 'left', distance: '50px', duration: 1000 });
-
-        // Reveal '.owl-carousel' from the bottom with a delay of 700ms
-        ScrollReveal().reveal('.owl-carousel, .custom-carousel', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
-
-        $(".custom-carousel").owlCarousel({
-            autoWidth: true,
-            loop: true
-        });
-        $(document).ready(function () {
-            $(".custom-carousel .item").click(function () {
-                $(".custom-carousel .item").not($(this)).removeClass("active");
-                $(this).toggleClass("active");
+            // Reveal '.hero_text' from the left
+            ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
+    
+            // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
+            ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+    
+            ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
+    
+            // Reveal '.owl-carousel' from the bottom with a delay of 700ms
+            ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a, .pricingTable-firstTable_table:not(:last-of-type)', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+    
+            $(".custom-carousel").owlCarousel({
+                autoWidth: true,
+                loop: true
             });
-        });
-
-        /*	CHECK FOR PREFERED REDUCED MOTION
-                AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
-                SPLITTING THE LIST ELEMENT INTO MULTIPLE
-                LISTS OR APPLYING THE SCROLL ANIMATION
-        */
-        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-        if (mediaQuery && !mediaQuery.matches) {
-            const tagScroller = document.querySelector(".tag-scroller");
-            const allTags = tagScroller.querySelectorAll("li");
-
-            function createElement(tagName, className = "") {
-                const elem = document.createElement(tagName);
-                elem.className = className;
-                return elem;
-            }
-
-            function scrollersFrom(elements, numColumns = 2) {
-                const fragment = new DocumentFragment();
-                elements.forEach((element, i) => {
-                    const column = i % numColumns;
-                    const children = fragment.children;
-                    if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
-                    children[column].appendChild(element);
+            $(document).ready(function () {
+                $(".custom-carousel .item").click(function () {
+                    $(".custom-carousel .item").not($(this)).removeClass("active");
+                    $(this).toggleClass("active");
                 });
-                return fragment;
-            }
-
-            /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
-                    AND CALL THE ANIMATION
+            });
+    
+            /*	CHECK FOR PREFERED REDUCED MOTION
+                    AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
+                    SPLITTING THE LIST ELEMENT INTO MULTIPLE
+                    LISTS OR APPLYING THE SCROLL ANIMATION
             */
-            const scrollers = scrollersFrom(allTags, 2);
-            tagScroller.innerHTML = "";
-            tagScroller.appendChild(scrollers);
-            addScrolling();
-
-            /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
-                    CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
-                    FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
-                    BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
-                    MOVE AT THE SAME RATE OF SPEED
-                	
-                    DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
-                    LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
-                    TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
-                    WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
-                	
-                    THIS COULD OF COURSE BE ADDED TO THE SCRIPT
-                    BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
-                    LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
-            */
-            function addScrolling() {
-                tagScroller.classList.add("scrolling");
-                document.querySelectorAll(".tag-list").forEach((tagList) => {
-                    const scrollContent = Array.from(tagList.children);
-                    scrollContent.forEach((listItem) => {
-                        const clonedItem = listItem.cloneNode(true);
-                        clonedItem.setAttribute("aria-hidden", true);
-                        tagList.appendChild(clonedItem);
+            const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+            if (mediaQuery && !mediaQuery.matches) {
+                const tagScroller = document.querySelector(".tag-scroller");
+                const allTags = tagScroller.querySelectorAll("li");
+    
+                function createElement(tagName, className = "") {
+                    const elem = document.createElement(tagName);
+                    elem.className = className;
+                    return elem;
+                }
+    
+                function scrollersFrom(elements, numColumns = 2) {
+                    const fragment = new DocumentFragment();
+                    elements.forEach((element, i) => {
+                        const column = i % numColumns;
+                        const children = fragment.children;
+                        if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
+                        children[column].appendChild(element);
                     });
-                    tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
-                });
+                    return fragment;
+                }
+    
+                /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
+                        AND CALL THE ANIMATION
+                */
+                const scrollers = scrollersFrom(allTags, 2);
+                tagScroller.innerHTML = "";
+                tagScroller.appendChild(scrollers);
+                addScrolling();
+    
+                /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
+                        CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
+                        FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
+                        BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
+                        MOVE AT THE SAME RATE OF SPEED
+                        
+                        DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
+                        LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
+                        TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
+                        WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
+                        
+                        THIS COULD OF COURSE BE ADDED TO THE SCRIPT
+                        BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
+                        LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
+                */
+                function addScrolling() {
+                    tagScroller.classList.add("scrolling");
+                    document.querySelectorAll(".tag-list").forEach((tagList) => {
+                        const scrollContent = Array.from(tagList.children);
+                        scrollContent.forEach((listItem) => {
+                            const clonedItem = listItem.cloneNode(true);
+                            clonedItem.setAttribute("aria-hidden", true);
+                            tagList.appendChild(clonedItem);
+                        });
+                        tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
+                    });
+                }
             }
-        }
-
-    </script>
+    
+        </script>
     <script>
         //slideshow style interval
 var autoSwap = setInterval( swap,7000);

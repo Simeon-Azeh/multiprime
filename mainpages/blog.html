@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="/css/music.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({ reset: true });
+</script>
+</head>
+<body>
+
+    <header class="navbar sticky">
+
+        <div class="logo">
+            <a href="index.html"><img src="/assets/multiprime2.png" alt=""></a>
+        </div>
+        <ul class="menu-items">
+            <li><a href="/index.html" class="menu-item">Feed</a></li>
+            <li>
+                <a href="/mainpages/music.html" class="menu-item">Music</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/music/releases.html" class="menu-item">Releases</a></li>
+                    <li><a href="#" class="menu-item">Beats</a></li>
+                    <li><a href="#" class="menu-item">Profile</a></li>
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Albums
+                        </a>
+                        <ul class="dropdown-menu menu-right sample">
+                            <li><a href="#" class="menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Movies</a>
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Releases
+                        </a>
+                        <ul class="dropdown-menu menu-left sample">
+                            <li><a href="#" class="menu-item">Videos</a></li>
+                            <li><a href="#" class="menu-item">Short Films</a></li>
+                            <li><a href="#" class="menu-item">Skits</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Profiles</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdownMega">
+                <a href="#" class="menu-item">Modelling</a>
+                <div class="dropdown-menu mega-menu category">
+                    <div class="content">
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Shop</div>
+                                <a href="#" class="img-wrapper"><span class="img"><img
+                                            src="/assets/shop1.jpg" alt="Random Image" /></span></a>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Profile</div>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="menu-item">Item with a long menu name 1</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 2</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 3</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 4</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 5</a></li>
+                                </ul>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Dance</a>
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Releases
+                        </a>
+                        <ul class="dropdown-menu menu-left sample">
+                            <li><a href="#" class="menu-item">Videos</a></li>
+                            <li><a href="#" class="menu-item">Shorts</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Profiles</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdownMega">
+                <a href="/mainpages/blog.html" class="menu-item active">Blog</a>
+                <div class="dropdown-menu mega-menu blog">
+                    <div class="content">
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="/assets/blog5.png" alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="/assets/blog4.jpg" alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="/assets/blog3.jpg" alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img
+                                        src="/assets/blog2.jpg" alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="menu-item">Support</a></li>
+        </ul>
+        <div class="search_container">
+            <form class="search-form">
+                <input type="search" value="" placeholder="Search" class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="submit-button">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                    </svg>
+                </button>
+                <div class="search-option">
+                    <div>
+                        <input name="type" type="radio" value="type-users" id="type-users">
+                        <label for="type-users">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+                            </svg>
+                            <span>Users</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input name="type" type="radio" value="type-posts" id="type-posts">
+                        <label for="type-posts">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+                            </svg>
+                            <span>Posts</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-images" id="type-images">
+                        <label for="type-images">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                            </svg>
+                            <span>Images</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                        <label for="type-special">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
+                            </svg>
+                            <span>Special</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                <symbol id="search" viewBox="0 0 32 32">
+                    <path
+                        d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                </symbol>
+                <symbol id="user" viewBox="0 0 32 32">
+                    <path
+                        d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" />
+                </symbol>
+                <symbol id="images" viewbox="0 0 32 32">
+                    <path
+                        d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                </symbol>
+                <symbol id="post" viewbox="0 0 32 32">
+                    <path
+                        d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                </symbol>
+                <symbol id="special" viewbox="0 0 32 32">
+                    <path
+                        d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                </symbol>
+            </svg>
+        </div>
+
+        <div class="menu-btn">
+            <i class="ri-menu-3-fill"></i>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <i class="ri-close-circle-line close-icon"></i> <!-- Close icon -->
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="/index.html" class="mobile-menu-item">Feed</a></li>
+            <li class="mobile-dropdown">
+                <a href="./mainpages/music.html" class="mobile-menu-item active">Music<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+
+                    <li><a href="/music/releases.html" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Beats</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profile</a></li>
+                    <li class="mobile-dropdown">
+                        <a href="#" class="mobile-menu-item">Albums<i class="ri-arrow-drop-down-line"></i></a>
+                        <ul class="mobile-submenu">
+                            <li><a href="#" class="mobile-menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Movies<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Videos</a></li>
+                    <li><a href="#" class="mobile-menu-item">Short Films</a></li>
+                    <li><a href="#" class="mobile-menu-item">Skits</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profiles</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Modelling<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Shop</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 1</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 2</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 3</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 4</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 5</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Dance<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Videos</a></li>
+                    <li><a href="#" class="mobile-menu-item">Shorts</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profiles</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Blog</a>
+            </li>
+            <li><a href="#" class="mobile-menu-item">Support</a></li>
+        </ul>
+        <div class="search_container">
+            <form class="search-form">
+                <input type="search" value="" placeholder="Search" class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="submit-button">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                    </svg>
+                </button>
+                <div class="search-option">
+                    <div>
+                        <input name="type" type="radio" value="type-users" id="type-users">
+                        <label for="type-users">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+                            </svg>
+                            <span>Users</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input name="type" type="radio" value="type-posts" id="type-posts">
+                        <label for="type-posts">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+                            </svg>
+                            <span>Posts</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-images" id="type-images">
+                        <label for="type-images">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                            </svg>
+                            <span>Images</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                        <label for="type-special">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
+                            </svg>
+                            <span>Special</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                <symbol id="search" viewBox="0 0 32 32">
+                    <path
+                        d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                </symbol>
+                <symbol id="user" viewBox="0 0 32 32">
+                    <path
+                        d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" />
+                </symbol>
+                <symbol id="images" viewbox="0 0 32 32">
+                    <path
+                        d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                </symbol>
+                <symbol id="post" viewbox="0 0 32 32">
+                    <path
+                        d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                </symbol>
+                <symbol id="special" viewbox="0 0 32 32">
+                    <path
+                        d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                </symbol>
+            </svg>
+        </div>
+    </div>
+
+
+
+  
+
+
+   <section class="blogs">
+   
+        
+        <div class="blog-container">
+          
+          <div class="blog-header">
+            <div class="blog-cover">
+             
+            </div>
+          </div>
+        
+          <div class="blog-body">
+            <div class="blog-title">
+              <h1><a href="#">Music healing - The discussion</a></h1>
+            </div>
+            <div class="blog-summary">
+              <p>Music has long been recognized for its therapeutic qualities, with numerous studies highlighting its ability to heal and uplift. In this discu....</p>
+            </div>
+            <div class="blog-tags">
+              <ul>
+                <li><a href="#">#music</a></li>
+                <li><a href="#">#fame</a></li>
+                <li><a href="#">#healing</a></li>
+                <li><a href="#">#therapy</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="blog-footer">
+            <div class="blog_author">
+                <div class="img_container">
+                    <img src="/assets/artist1.jpg" alt="">
+                </div>
+                <div class="author_detail">
+                    <h1>Kay C</h1>
+                    <p class="post-time">Posted: </p>
+                </div>
+            </div>
+           
+          </div>
+
+        </div>
+        <!-- The Modal -->
+        <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+            <i class="ri-close-fill portfolio-close-btn"></i>
+            <h3>Music healing - The discussion</h3>
+            <img src="/assets/blog4.jpg" alt="">
+            <p>Music has long been recognized for its therapeutic qualities, with numerous studies highlighting its ability to heal and uplift. In this discussion, we delve into the profound impact of music on our emotional and mental well-being.</p>
+            <img src="Images/mari.png" alt="">
+         
+            <h3 class="modal-heading">The Healing Power of Music</h3>
+            <p>
+
+                From ancient civilizations to modern times, music has been used as a form of therapy to soothe the soul and heal the body. Whether it's the rhythmic beats of a drum or the melodic tones of a violin, music has the power to evoke emotions and stimulate healing.</p> <br>
+                
+                <h3 class="modal-heading">Music as a Form of Expression</h3>
+             <p>
+                For many, music serves as a form of expression, allowing individuals to convey their deepest thoughts and emotions through song lyrics and melodies. Whether it's through writing their own music or simply listening to their favorite tunes, people find solace and comfort in the power of music.
+             </p>
+               
+              <h3 class="modal-heading">Music Therapy Techniques</h3>
+              <p>
+                Music therapy employs various techniques to promote healing and wellness, including guided imagery, relaxation exercises, and improvisational music-making. By incorporating music into therapeutic sessions, individuals can explore their emotions, reduce stress, and enhance their overall quality of life.
+              </p>
+              <h3 class="modal-heading">The Future of Music Healing</h3>
+              <p>
+                As we continue to explore the potential of music therapy, researchers are uncovering new ways to harness the healing power of music. From personalized playlists to immersive sound experiences, the future of music healing holds endless possibilities for improving our mental and emotional well-being.
+
+Join us in this discussion as we explore the transformative impact of music healing and its potential to inspire positive change in our lives.
+              </p>
+              <div class="blog_author">
+                <div class="img_container">
+                    <img src="/assets/artist1.jpg" alt="">
+                </div>
+                <div class="author_detail">
+                    <h1>Kay C</h1>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+        <div class="blog-container">
+          
+            <div class="blog-header">
+              <div class="blog-cover2">
+               
+              </div>
+            </div>
+          
+            <div class="blog-body">
+              <div class="blog-title">
+                <h1><a href="#">Multiprime podcast</a></h1>
+              </div>
+              <div class="blog-summary">
+                <p>The Multiprime podcast is your go-to source for insightful discussions on a variety of topics ranging from music and fame to hea...</p>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">#music</a></li>
+                  <li><a href="#">#fame</a></li>
+                  <li><a href="#">#healing</a></li>
+                  <li><a href="#">#therapy</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="blog-footer">
+              <div class="blog_author">
+                  <div class="img_container">
+                      <img src="/assets/artist2.jpg" alt="">
+                  </div>
+                  <div class="author_detail">
+                      <h1>Olatunde</h1>
+                      <p class="post-time">Posted: </p>
+                  </div>
+              </div>
+              
+            </div>
+
+      
+            </div>
+                <!-- Blog modal -->
+        <div class="portfolio-model flex-center">
+            <div class="portfolio-model-body">
+            <i class="ri-close-fill portfolio-close-btn"></i>
+            <h3>Multiprime Podcast</h3>
+            <img src="/assets/blog1.jpg" alt="Multiprime Podcast Cover">
+            <p>The Multiprime podcast is your go-to source for insightful discussions on a variety of topics ranging from music and fame to healing and therapy. Join us as we explore the multifaceted world of entertainment, wellness, and personal growth.</p>
+            <h3 class="modal-heading">About the Podcast</h3>
+            <p>The Multiprime podcast is hosted by Olatunde, a passionate advocate for mental health and self-improvement. Each episode features engaging conversations with industry experts, artists, and thought leaders, offering valuable insights and inspiration to listeners.</p>
+            <h3 class="modal-heading">Episode Highlights</h3>
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Exploring the transformative power of music therapy.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Insights from renowned musicians on the creative process and the impact of fame.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Interviews with psychologists and wellness experts on the role of healing and therapy in personal growth.</li>
+            </ul>
+            <p>Don't miss out on the latest episodes of the Multiprime podcast! Tune in to gain valuable knowledge, inspiration, and entertainment.</p>
+            <a href="https://multiprimepodcast.com" target="_blank">Listen now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+  
+          <div class="blog-container">
+          
+            <div class="blog-header">
+              <div class="blog-cover3">
+               
+              </div>
+            </div>
+          
+            <div class="blog-body">
+              <div class="blog-title">
+                <h1><a href="#">What you didn't know about record labels</a></h1>
+              </div>
+              <div class="blog-summary">
+                <p>Record labels have long been the cornerstone of the music industry, wielding considerable influence over artists' care...</p>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">#music</a></li>
+                  <li><a href="#">#fame</a></li>
+                  <li><a href="#">#healing</a></li>
+                  <li><a href="#">#therapy</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="blog-footer">
+              <div class="blog_author">
+                  <div class="img_container">
+                      <img src="/assets/artist1.jpg" alt="">
+                  </div>
+                  <div class="author_detail">
+                      <h1>Kay C</h1>
+                      <p class="post-time">Posted: </p>
+                  </div>
+              </div>
+            </div>
+            </div>
+              <!--Blog modal-->
+              <div class="portfolio-model flex-center">
+                <div class="portfolio-model-body">
+                <i class="ri-close-fill portfolio-close-btn"></i>
+                <h3>Unveiling the Veiled: Surprising Truths About Record Labels</h3>
+                <img src="/assets/blog5.png" alt="">
+                <p>Record labels have long been the cornerstone of the music industry, wielding considerable influence over artists' careers and shaping musical trends. While many assume they know the ins and outs of record labels, there's a trove of lesser-known facts that shed light on this enigmatic industry. In this article, we delve into some of the surprising truths about record labels that may just reshape your perception.</p>
+                <img src="Images/uregaaaaa.png" alt="">
+             
+                <h3 class="modal-heading">The Rise of Indie Labels:</h3>
+                <p>
+
+                    Contrary to popular belief, not all successful artists are signed to major record labels. The indie music scene has seen a significant surge in recent years, with independent labels fostering unique talent and producing groundbreaking music. These indie labels often offer artists greater creative freedom and a more personalized approach to their careers, challenging the dominance of major record companies.</p> <br>
+                    
+                  
+                <h3 class="modal-heading">360 Deals: The Fine Print:</h3>
+                <p>
+                    In the pursuit of signing lucrative deals, artists may unknowingly enter into 360 deals with record labels. These agreements extend beyond traditional recording contracts, granting labels a share of an artist's earnings from all revenue streams, including touring, merchandise, and endorsements. While 360 deals can provide financial support and resources, they also entail a loss of autonomy for artists, who must navigate complex contractual obligations.
+                </p>
+
+                <h3 class="modal-heading">The Digital Revolution:</h3>
+                <p>
+                    The advent of digital streaming platforms has revolutionized the music industry, transforming the way music is consumed and distributed. Record labels have had to adapt to this digital landscape, striking licensing deals with streaming services and harnessing data analytics to identify emerging trends and target audiences. Despite initial skepticism, streaming has become a primary revenue source for labels, reshaping their business models and marketing strategies.
+                </p>
+                <h3 class="modal-heading">The Power of A&R:</h3>
+                <p>
+                    Artist and repertoire (A&R) executives play a pivotal role within record labels, scouting talent, and shaping artists' sound and image. These behind-the-scenes tastemakers possess a keen ear for emerging trends and possess the ability to catapult unknown artists to stardom. While A&R professionals may not always receive the spotlight, their influence is integral to the success of record labels and the artists they champion.
+                </p>
+                <h3 class="modal-heading">The Legacy of Vinyl:</h3>
+                <p>
+                    In an age dominated by digital downloads and streaming, vinyl records have experienced a remarkable resurgence in popularity. Record labels have capitalized on this revival, reissuing classic albums and pressing new releases on vinyl to cater to audiophiles and collectors. The vinyl renaissance not only showcases the enduring appeal of physical music formats but also highlights the nostalgic allure of vinyl records in an increasingly digitized world.
+                </p>
+                <p>
+                    Record labels remain a cornerstone of the music industry, wielding influence over artists' careers and shaping musical landscapes. However, behind the glitz and glamour lies a complex ecosystem characterized by indie innovation, digital disruption, and contractual intricacies. By delving into these lesser-known aspects of record labels, we gain a deeper understanding of their evolving role in an ever-changing industry.
+                </p>
+                <div class="blog_author">
+                    <div class="img_container">
+                        <img src="/assets/artist1.jpg" alt="">
+                    </div>
+                    <div class="author_detail">
+                        <h1>Kay C</h1>
+                    </div>
+                </div>
+               
+                </div>
+          </div>
+          <div class="blog-container">
+          
+            <div class="blog-header">
+              <div class="blog-cover new-cover">
+               
+              </div>
+            </div>
+          
+            <div class="blog-body">
+              <div class="blog-title">
+                <h1><a href="#">Movie magic</a></h1>
+              </div>
+              <div class="blog-summary">
+                <p>From the silent era to the digital age, cinema has captivated audiences worldwide with its ability to transport viewers to far-off worl...</p>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">#movies</a></li>
+                  <li><a href="#">#fame</a></li>
+                  <li><a href="#">#acting</a></li>
+                  <li><a href="#">#skits</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="blog-footer">
+              <div class="blog_author">
+                  <div class="img_container">
+                      <img src="/assets/artist1.jpg" alt="">
+                  </div>
+                  <div class="author_detail">
+                      <h1>Kay C</h1>
+                      <p class="post-time">Posted: </p>
+                  </div>
+              </div>
+            </div>
+
+         
+          
+          </div>
+
+             <!--Blog modal-->
+             <div class="portfolio-model flex-center">
+                <div class="portfolio-model-body">
+                <i class="ri-close-fill portfolio-close-btn"></i>
+                <h3>Movie Magic</h3>
+                <img src="/assets/blog2.jpg" alt="">
+                <p>From the silent era to the digital age, cinema has captivated audiences worldwide with its ability to transport viewers to far-off worlds, evoke emotions, and ignite imaginations. Behind the mesmerizing spectacle of the silver screen lies a realm of creativity and innovation known as "movie magic." Let's delve into the enchanting world of movie magic and uncover the secrets that bring cinematic dreams to life.</p>
+               <div class="soft_alert">
+                <i class="ri-error-warning-fill"></i>
+                <p>The content of this blog is subject to change.</p>
+               </div>
+
+                 
+                </div>
+            </div>
+              
+        
+       
+        
+     
+        
+   </section>
+
+ 
+   
+
+    <footer class="new_footer_area bg_color">
+        <div class="footer_container">
+            <div class="newsletter">
+                <h1>Get in touch</h1>
+                <p>Don't miss our exciting offers!</p>
+                <form action="">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <a href="#">Music</a>
+                <a href="#">Beats</a>
+                <a href="#">Videos</a>
+                <a href="#">Models</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="links">
+                <h1>Help</h1>
+                <a href="#">FAQs</a>
+                <a href="#">Term & conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+                <a href="#">Subscription</a>
+            </div>
+            <div class="follow">
+                <h1>Follow Us</h1>
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+
+            </div>
+
+        </div>
+        <p class="copyright">Copyright &copy; Multiprime 2023. All rights reserved</p>
+    </footer>
+
+    <script src="../main.js"></script>
+    <script src="/js/music.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script>
+
+
+        // Reveal '.hero_text' from the left
+        ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
+
+        // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
+        ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+
+        ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
+
+        // Reveal '.owl-carousel' from the bottom with a delay of 700ms
+        ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+
+        /*	CHECK FOR PREFERED REDUCED MOTION
+                AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
+                SPLITTING THE LIST ELEMENT INTO MULTIPLE
+                LISTS OR APPLYING THE SCROLL ANIMATION
+        */
+        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (mediaQuery && !mediaQuery.matches) {
+            const tagScroller = document.querySelector(".tag-scroller");
+            const allTags = tagScroller.querySelectorAll("li");
+
+            function createElement(tagName, className = "") {
+                const elem = document.createElement(tagName);
+                elem.className = className;
+                return elem;
+            }
+
+            function scrollersFrom(elements, numColumns = 2) {
+                const fragment = new DocumentFragment();
+                elements.forEach((element, i) => {
+                    const column = i % numColumns;
+                    const children = fragment.children;
+                    if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
+                    children[column].appendChild(element);
+                });
+                return fragment;
+            }
+
+            /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
+                    AND CALL THE ANIMATION
+            */
+            const scrollers = scrollersFrom(allTags, 2);
+            tagScroller.innerHTML = "";
+            tagScroller.appendChild(scrollers);
+            addScrolling();
+
+            /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
+                    CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
+                    FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
+                    BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
+                    MOVE AT THE SAME RATE OF SPEED
+                	
+                    DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
+                    LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
+                    TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
+                    WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
+                	
+                    THIS COULD OF COURSE BE ADDED TO THE SCRIPT
+                    BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
+                    LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
+            */
+            function addScrolling() {
+                tagScroller.classList.add("scrolling");
+                document.querySelectorAll(".tag-list").forEach((tagList) => {
+                    const scrollContent = Array.from(tagList.children);
+                    scrollContent.forEach((listItem) => {
+                        const clonedItem = listItem.cloneNode(true);
+                        clonedItem.setAttribute("aria-hidden", true);
+                        tagList.appendChild(clonedItem);
+                    });
+                    tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
+                });
+            }
+        }
+
+    </script>
+
+<script type="text/javascript" src="//use.typekit.net/wtt0gtr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script>
+    // Define post dates for each blog post
+    var postDates = [
+      new Date('2024-04-03T07:56:00'), // First post date
+      new Date('2024-04-02T08:00:00'), // Second post date
+      new Date('2024-04-03T08:00:00'), // Third post date
+      new Date('2024-04-03T07:00:00')  // Fourth post date
+    ];
+  
+    // Define a function to update post times
+    function updatePostTimes() {
+      var postTimeElements = document.querySelectorAll('.post-time');
+      var currentTime = new Date();
+  
+      postTimeElements.forEach(function(element, index) {
+        var postDate = postDates[index];
+        
+        // Calculate the time difference between current time and post time
+        var timeDifference = currentTime - postDate;
+        var elapsedMinutes = Math.floor(timeDifference / (1000 * 60)); // Convert milliseconds to minutes
+        var elapsedTimeString;
+  
+        if (elapsedMinutes < 1) {
+          elapsedTimeString = 'just now';
+        } else if (elapsedMinutes < 60) {
+          elapsedTimeString = elapsedMinutes + ' minutes ago';
+        } else if (elapsedMinutes < 1440) {
+          var elapsedHours = Math.floor(elapsedMinutes / 60);
+          elapsedTimeString = elapsedHours + ' hours ago';
+        } else {
+          var elapsedDays = Math.floor(elapsedMinutes / 1440);
+          elapsedTimeString = elapsedDays + ' days ago';
+        }
+  
+        element.textContent = elapsedTimeString;
+      });
+    }
+  
+    // Call the function initially
+    updatePostTimes();
+  
+    // Update post times every minute
+    setInterval(updatePostTimes, 60000); // 60000 milliseconds = 1 minute
+  
+  </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const blogContainers = document.querySelectorAll(".blog-container");
+    const portfolioModals = document.querySelectorAll(".portfolio-model");
+    const closeBtns = document.querySelectorAll(".portfolio-close-btn");
+
+    // Function to open the portfolio modal
+    function openPortfolioModal(index) {
+        portfolioModals[index].classList.add("active");
+        document.body.classList.add("open-portfolio-modal");
+    }
+
+    // Function to close all portfolio modals
+    function closePortfolioModals() {
+        portfolioModals.forEach(function(modal) {
+            modal.classList.remove("active");
+        });
+        document.body.classList.remove("open-portfolio-modal");
+    }
+
+    // Event listeners for opening portfolio modals
+    blogContainers.forEach(function(container, index) {
+        container.addEventListener("click", function() {
+            openPortfolioModal(index);
+        });
+    });
+
+    // Event listeners for closing portfolio modals
+    closeBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            closePortfolioModals();
+        });
+    });
+
+    // Close portfolio modal when clicking outside the modal
+    window.addEventListener("click", function(event) {
+        if (event.target.classList.contains("portfolio-model")) {
+            closePortfolioModals();
+        }
+    });
+});
+
+ </script>
+  
+  
+    
+  
+</body>
+</html>

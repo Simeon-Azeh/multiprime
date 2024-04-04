@@ -17,7 +17,9 @@
   --text-color: #fff;
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
+.more_btn {
+  display: none;
+}
 body {}
 
 
@@ -60,6 +62,7 @@ html {
   cursor: pointer;
   z-index: 2;
 }
+
 
 @media (max-width: 1023px) {
   .menu-btn {
@@ -309,9 +312,13 @@ html {
   transition: 0.25s;
 }
 
-.navbar .menu-item:hover {
+.navbar .menu-item:hover,
+.navbar .menu-item.active,
+.navbar .mobile-menu-item .active {
   color: #ff5722;
 }
+ 
+
 
 .navbar ul li {
   list-style: none;
