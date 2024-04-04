@@ -4,115 +4,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Music</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
         integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body>
-    <header class="desktop_header">
-        <a href="#">
-            <h1>Alumni<span>Hub</span> </h1>
-        </a>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </nav>
-        <form action="">
-            <i class="ri-search-2-line"></i>
-            <input type="text" name="search" id="search" placeholder="Search">
-        </form>
-        <a href="#"><i class="ri-menu-3-line" id="menu"></i></a>
+    <header class="navbar sticky">
+
+        <div class="logo">
+            <a href="index.html"><img src="/assets/multiprime2.png" alt=""></a>
+        </div>
+        <ul class="menu-items">
+            <li><a href="/index.html" class="menu-item">Feed</a></li>
+            <li>
+                <a href="/mainpages/music.html" class="menu-item">Music</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/music/releases.html" class="menu-item">Releases</a></li>
+                    <li><a href="#" class="menu-item">Beats</a></li>
+                    <li><a href="#" class="menu-item">Profile</a></li>
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Albums
+                        </a>
+                        <ul class="dropdown-menu menu-right sample">
+                            <li><a href="#" class="menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Movies</a>
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Releases
+                        </a>
+                        <ul class="dropdown-menu menu-left sample">
+                            <li><a href="#" class="menu-item">Videos</a></li>
+                            <li><a href="#" class="menu-item">Short Films</a></li>
+                            <li><a href="#" class="menu-item">Skits</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Profiles</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdownMega">
+                <a href="#" class="menu-item">Modelling</a>
+                <div class="dropdown-menu mega-menu category">
+                    <div class="content">
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Shop</div>
+                                <a href="#" class="img-wrapper"><span class="img"><img src="/assets/shop1.jpg"
+                                            alt="Random Image" /></span></a>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <div class="menu-title">Profile</div>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="menu-item">Item with a long menu name 1</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 2</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 3</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 4</a></li>
+                                    <li><a href="#" class="menu-item">Item with a long menu name 5</a></li>
+                                </ul>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="menu-item">Dance</a>
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                            Releases
+                        </a>
+                        <ul class="dropdown-menu menu-left sample">
+                            <li><a href="#" class="menu-item">Videos</a></li>
+                            <li><a href="#" class="menu-item">Shorts</a></li>
 
 
-    </header>
-    <div class="mobile_nav">
-        <i class="ri-close-line" id="close"></i>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Profiles</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdownMega">
+                <a href="/mainpages/blog.html" class="menu-item">Blog</a>
+                <div class="dropdown-menu mega-menu blog">
+                    <div class="content">
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img src="/assets/blog5.png"
+                                        alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img src="/assets/blog4.jpg"
+                                        alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img src="/assets/blog3.jpg"
+                                        alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="img-wrapper"><span class="img"><img src="/assets/blog2.jpg"
+                                        alt="Random Image" /></span></a>
+                            <h3 class="menu-title"><a href="">Your Title</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="menu-item active">Support</a></li>
         </ul>
-    </div>
-    <section class="section contact___us" id="featured">
-      <div class="contact_container">
+        <div class="search_container">
+            <form class="search-form">
+                <input type="search" value="" placeholder="Search" class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="submit-button">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                    </svg>
+                </button>
+                <div class="search-option">
+                    <div>
+                        <input name="type" type="radio" value="type-users" id="type-users">
+                        <label for="type-users">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+                            </svg>
+                            <span>Users</span>
+                        </label>
+                    </div>
 
-      
-        <div class="contacts">
-            <h1>Get in touch</h1>
-            <p><span class="span">Address:</span>Kigali, Rwanda</p>
-            <p><span class="span">Email:</span>info@alumni.com</p>
-            <p><span class="span">Phone:</span>(+250) 788 123 456</p>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5535042082997!2d30.150342673651643!3d-1.930625736667058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca77688d3131f%3A0x3a65f6d29a33c0d3!2sAfrican%20Leadership%20University!5e0!3m2!1sen!2srw!4v1708353807954!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-
-  
-
-    <section class="section" id="contact_us">
-        <div class="form_contact">
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Enter your subject">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                <input type="button" value="Send" class="input_btn">
+                    <div>
+                        <input name="type" type="radio" value="type-posts" id="type-posts">
+                        <label for="type-posts">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+                            </svg>
+                            <span>Posts</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-images" id="type-images">
+                        <label for="type-images">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                            </svg>
+                            <span>Images</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                        <label for="type-special">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
+                            </svg>
+                            <span>Special</span>
+                        </label>
+                    </div>
+                </div>
             </form>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                <symbol id="search" viewBox="0 0 32 32">
+                    <path
+                        d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                </symbol>
+                <symbol id="user" viewBox="0 0 32 32">
+                    <path
+                        d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" />
+                </symbol>
+                <symbol id="images" viewbox="0 0 32 32">
+                    <path
+                        d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                </symbol>
+                <symbol id="post" viewbox="0 0 32 32">
+                    <path
+                        d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                </symbol>
+                <symbol id="special" viewbox="0 0 32 32">
+                    <path
+                        d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                </symbol>
+            </svg>
         </div>
-     
-    </section>
 
-  
+        <div class="menu-btn">
+            <i class="ri-menu-3-fill"></i>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <i class="ri-close-circle-line close-icon"></i> <!-- Close icon -->
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="/index.html" class="mobile-menu-item">Feed</a></li>
+            <li class="mobile-dropdown">
+                <a href="./mainpages/music.html" class="mobile-menu-item active">Music<i
+                        class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
 
+                    <li><a href="/music/releases.html" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Beats</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profile</a></li>
+                    <li class="mobile-dropdown">
+                        <a href="#" class="mobile-menu-item">Albums<i class="ri-arrow-drop-down-line"></i></a>
+                        <ul class="mobile-submenu">
+                            <li><a href="#" class="mobile-menu-item">Item 4.1</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.2</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.3</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.4</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.5</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.6</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.7</a></li>
+                            <li><a href="#" class="mobile-menu-item">Item 4.8</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Movies<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Videos</a></li>
+                    <li><a href="#" class="mobile-menu-item">Short Films</a></li>
+                    <li><a href="#" class="mobile-menu-item">Skits</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profiles</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Modelling<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Shop</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 1</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 2</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 3</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 4</a></li>
+                    <li><a href="#" class="mobile-menu-item">Item with a long menu name 5</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Dance<i class="ri-arrow-drop-down-line"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#" class="mobile-menu-item">Releases</a></li>
+                    <li><a href="#" class="mobile-menu-item">Videos</a></li>
+                    <li><a href="#" class="mobile-menu-item">Shorts</a></li>
+                    <li><a href="#" class="mobile-menu-item">Profiles</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-menu-item">Blog</a>
+            </li>
+            <li><a href="#" class="mobile-menu-item">Support</a></li>
+        </ul>
+        <div class="search_container">
+            <form class="search-form">
+                <input type="search" value="" placeholder="Search" class="search-input">
+                <button type="submit" class="search-button">
+                    <svg class="submit-button">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                    </svg>
+                </button>
+                <div class="search-option">
+                    <div>
+                        <input name="type" type="radio" value="type-users" id="type-users">
+                        <label for="type-users">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+                            </svg>
+                            <span>Users</span>
+                        </label>
+                    </div>
 
-    <footer>
+                    <div>
+                        <input name="type" type="radio" value="type-posts" id="type-posts">
+                        <label for="type-posts">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
+                            </svg>
+                            <span>Posts</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-images" id="type-images">
+                        <label for="type-images">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
+                            </svg>
+                            <span>Images</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input name="type" type="radio" value="type-special" id="type-special" checked="">
+                        <label for="type-special">
+                            <svg class="edit-pen-title">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
+                            </svg>
+                            <span>Special</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
 
+            <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                <symbol id="search" viewBox="0 0 32 32">
+                    <path
+                        d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                </symbol>
+                <symbol id="user" viewBox="0 0 32 32">
+                    <path
+                        d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" />
+                </symbol>
+                <symbol id="images" viewbox="0 0 32 32">
+                    <path
+                        d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                </symbol>
+                <symbol id="post" viewbox="0 0 32 32">
+                    <path
+                        d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                </symbol>
+                <symbol id="special" viewbox="0 0 32 32">
+                    <path
+                        d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                </symbol>
+            </svg>
+        </div>
+    </div>
+
+    <section class="hero__contact">
         <div class="container">
-            <a href="index.html">
-                <h1>Alumni<span>Hub</span></h1>
-            </a>
-            <div class="footer_links">
-                <div class="link_info">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="events.html">Events</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="link_info">
-                    <h3>Site Menu</h3>
-                    <a href="#">FAQ</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
-                <div class="follow">
-                    <h3>Follow Us</h3>
-                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="#"><i class="ri-instagram-fill"></i></a>
-                    <a href="#"><i class="ri-linkedin-fill"></i></a>
-                </div>
+            <div class="hero__text">
+                <h1>Get in touch with us</h1>
 
+                <p>Fill in the form below to contact us. Let's find a way to help you.</p>
+            </div>
+            <div class="containers">
+                <div class="box">
+                    <i class="ri-bookmark-line"></i>
+                    <div class="content">
+                        <h3>Book a session</h3>
+                        <p>Chat with sales</p>
+                        <button class="btn--book">Book</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-chat-3-line"></i>
+                    <div class="content">
+                        <h3>Chat with support</h3>
+                        <p>We're here 24/7 to help</p>
+                        <button class="btn--book">Chat</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-home-office-line"></i>
+                    <div class="content">
+                        <h3>Visit us</h3>
+                        <p>Visit our office HQ</p>
+                        <button class="btn--book">Get directions</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="ri-customer-service-fill"></i>
+                    <div class="content">
+                        <h3>Call us</h3>
+                        <p>Mon-Fri from 8am-5pm</p>
+                        <button class="btn--book">Call us</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+    </section>
+
+    <section class="contact_form">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.9105714666966!2d10.217720674077734!3d6.0070171289515795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105f3f6ac24b1243%3A0x8205ae2aef5b7f39!2sMulti_Prime!5e0!3m2!1sen!2scm!4v1712260513849!5m2!1sen!2scm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form_main">
+            <h3>Message us</h3>
+            <p>We'll get back to you within 24 hours.</p>
+            <form action="">
+                <div class="inout">
+                    <div>
+                        <label for="name">First name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="secondname">Second name</label>
+                        <input type="text" id="secondname" name="secondname" placeholder="Second name">
+                    </div>
+                </div>
+                <div class="inout">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                    </div>
+                </div>
+               
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Leave us a message..."></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+            
+            
+        </div>
+    </section>
+
+    <footer class="new_footer_area bg_color">
+        <div class="footer_container">
+            <div class="newsletter">
+                <h1>Get in touch</h1>
+                <p>Don't miss our exciting offers!</p>
+                <form action="">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="links">
+                <h1>Quick Links</h1>
+                <a href="#">Music</a>
+                <a href="#">Beats</a>
+                <a href="#">Videos</a>
+                <a href="#">Models</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="links">
+                <h1>Help</h1>
+                <a href="#">FAQs</a>
+                <a href="#">Term & conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+                <a href="#">Subscription</a>
+            </div>
+            <div class="follow">
+                <h1>Follow Us</h1>
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+
+            </div>
+
+        </div>
+        <p class="copyright">Copyright &copy; Multiprime 2023. All rights reserved</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
+    <script src="/js/music.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+
+        // Reveal '.hero_text' from the left
+        ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container, .img_container img, .footer_container .links, .containers .box', { origin: 'left', distance: '50px', duration: 1000 });
+
+        // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
+        ScrollReveal().reveal('.wrapper, .site__subtitle, .list, .blog-container ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+
+        ScrollReveal().reveal('.hero_text, .map, .artist .container, .hero__text, .artist .container .header h1, .newsletter .container .content', { origin: 'left', distance: '50px', duration: 1000 });
+
+        // Reveal '.owl-carousel' from the bottom with a delay of 700ms
+        ScrollReveal().reveal('.owl-carousel, .form_main, .custom-carousel, .artist .container .header h1, .newsletter .container .img_container img, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+
+        /*	CHECK FOR PREFERED REDUCED MOTION
+                AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
+                SPLITTING THE LIST ELEMENT INTO MULTIPLE
+                LISTS OR APPLYING THE SCROLL ANIMATION
+        */
+        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (mediaQuery && !mediaQuery.matches) {
+            const tagScroller = document.querySelector(".tag-scroller");
+            const allTags = tagScroller.querySelectorAll("li");
+
+            function createElement(tagName, className = "") {
+                const elem = document.createElement(tagName);
+                elem.className = className;
+                return elem;
+            }
+
+            function scrollersFrom(elements, numColumns = 2) {
+                const fragment = new DocumentFragment();
+                elements.forEach((element, i) => {
+                    const column = i % numColumns;
+                    const children = fragment.children;
+                    if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
+                    children[column].appendChild(element);
+                });
+                return fragment;
+            }
+
+            /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
+                    AND CALL THE ANIMATION
+            */
+            const scrollers = scrollersFrom(allTags, 2);
+            tagScroller.innerHTML = "";
+            tagScroller.appendChild(scrollers);
+            addScrolling();
+
+            /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
+                    CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
+                    FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
+                    BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
+                    MOVE AT THE SAME RATE OF SPEED
+                	
+                    DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
+                    LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
+                    TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
+                    WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
+                	
+                    THIS COULD OF COURSE BE ADDED TO THE SCRIPT
+                    BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
+                    LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
+            */
+            function addScrolling() {
+                tagScroller.classList.add("scrolling");
+                document.querySelectorAll(".tag-list").forEach((tagList) => {
+                    const scrollContent = Array.from(tagList.children);
+                    scrollContent.forEach((listItem) => {
+                        const clonedItem = listItem.cloneNode(true);
+                        clonedItem.setAttribute("aria-hidden", true);
+                        tagList.appendChild(clonedItem);
+                    });
+                    tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
+                });
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript" src="//use.typekit.net/wtt0gtr.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+    <script>
+        // Define post dates for each blog post
+        var postDates = [
+            new Date('2024-04-03T07:56:00'), // First post date
+            new Date('2024-04-02T08:00:00'), // Second post date
+            new Date('2024-04-03T08:00:00'), // Third post date
+            new Date('2024-04-03T07:00:00')  // Fourth post date
+        ];
+
+        // Define a function to update post times
+        function updatePostTimes() {
+            var postTimeElements = document.querySelectorAll('.post-time');
+            var currentTime = new Date();
+
+            postTimeElements.forEach(function (element, index) {
+                var postDate = postDates[index];
+
+                // Calculate the time difference between current time and post time
+                var timeDifference = currentTime - postDate;
+                var elapsedMinutes = Math.floor(timeDifference / (1000 * 60)); // Convert milliseconds to minutes
+                var elapsedTimeString;
+
+                if (elapsedMinutes < 1) {
+                    elapsedTimeString = 'just now';
+                } else if (elapsedMinutes < 60) {
+                    elapsedTimeString = elapsedMinutes + ' minutes ago';
+                } else if (elapsedMinutes < 1440) {
+                    var elapsedHours = Math.floor(elapsedMinutes / 60);
+                    elapsedTimeString = elapsedHours + ' hours ago';
+                } else {
+                    var elapsedDays = Math.floor(elapsedMinutes / 1440);
+                    elapsedTimeString = elapsedDays + ' days ago';
+                }
+
+                element.textContent = elapsedTimeString;
+            });
+        }
+
+        // Call the function initially
+        updatePostTimes();
+
+        // Update post times every minute
+        setInterval(updatePostTimes, 60000); // 60000 milliseconds = 1 minute
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const blogContainers = document.querySelectorAll(".blog-container");
+            const portfolioModals = document.querySelectorAll(".portfolio-model");
+            const closeBtns = document.querySelectorAll(".portfolio-close-btn");
+
+            // Function to open the portfolio modal
+            function openPortfolioModal(index) {
+                portfolioModals[index].classList.add("active");
+                document.body.classList.add("open-portfolio-modal");
+            }
+
+            // Function to close all portfolio modals
+            function closePortfolioModals() {
+                portfolioModals.forEach(function (modal) {
+                    modal.classList.remove("active");
+                });
+                document.body.classList.remove("open-portfolio-modal");
+            }
+
+            // Event listeners for opening portfolio modals
+            blogContainers.forEach(function (container, index) {
+                container.addEventListener("click", function () {
+                    openPortfolioModal(index);
+                });
+            });
+
+            // Event listeners for closing portfolio modals
+            closeBtns.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    closePortfolioModals();
+                });
+            });
+
+            // Close portfolio modal when clicking outside the modal
+            window.addEventListener("click", function (event) {
+                if (event.target.classList.contains("portfolio-model")) {
+                    closePortfolioModals();
+                }
+            });
+        });
+
+    </script>
+
+
+
+
 </body>
 
 </html>

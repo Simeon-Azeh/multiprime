@@ -203,6 +203,31 @@
     .hero_text h1 {
         margin-bottom: 20px;
     }
+    .containers {
+     flex-direction: column;
+    }
+    .containers .box {
+        width: 80%;
+        height: 100%;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+        padding: 40px;
+    }
+    .contact_form {
+      flex-direction: column;
+    }
+    .map {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form_main {
+        width: 100%;
+        margin-top: 40px;
+       
+    }
 }
     @media only screen and (max-width: 667px) {
 
@@ -397,4 +422,6 @@
     .newsletter .container .content form input {
         width: 100%;
     }
+
+
 }
