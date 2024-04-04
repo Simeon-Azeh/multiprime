@@ -362,4 +362,39 @@
     .btn--white {
         margin-left: 20px;
     }
+    .author_detail {
+        margin-left: -10px;
+        margin-top: -6px;
+    }
+    .soft_alert {
+       
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        letter-spacing: 0px;
+        padding: 0.3em 0.9rem;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .newsletter .container {
+       flex-direction: column;
+       
+    }
+    .newsletter {
+        padding: 10px;
+    }
+    .newsletter .container .img_container {
+        width: 100%;
+        height: 100%;
+      
+    }
+    .newsletter .container .content {
+        width: 100%;
+    }
+    .newsletter .container .content form button {
+        margin-left: 1px;
+    }
+    .newsletter .container .content form input {
+        width: 100%;
+    }
 }

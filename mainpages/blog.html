@@ -669,6 +669,24 @@ Join us in this discussion as we explore the transformative impact of music heal
         
    </section>
 
+   <section class="newsletter">
+    <div class="container">
+        <div class="img_container">
+            <img src="/assets/newsletter.png" alt="">
+
+        </div>
+        <div class="content">
+            <h1>Loved the blogs? Join our newsletter🚀</h1>
+            <p>Don't miss our exciting offers! Subscribe to our newsletter. PS: We don't send spam.</p>
+            <form action="#">
+                <input type="text" placeholder="Enter your email">
+                <button type="submit" >Subscribe</button>
+            </form>
+            <p>By subscribing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </div>
+   </section>
+
  
    
 
@@ -724,12 +742,12 @@ Join us in this discussion as we explore the transformative impact of music heal
         ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
-        ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+        ScrollReveal().reveal('.wrapper, .site__subtitle, .list, .blog-container ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
 
-        ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1, .newsletter .container .content', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.owl-carousel' from the bottom with a delay of 700ms
-        ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+        ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .newsletter .container .img_container img, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
 
         $(".custom-carousel").owlCarousel({
             autoWidth: true,
