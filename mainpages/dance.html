@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/music.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
     integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,45 +20,44 @@
     <header class="navbar sticky">
 
         <div class="logo">
-            <a href="index.html"><img src="/assets/multiprime2.png" alt=""></a>
+            <a href="/index.html"><img src="/assets/multiprime2.png" alt=""></a>
         </div>
         <ul class="menu-items">
-            <li><a href="/index.html" class="menu-item">Feed</a></li>
+            <li><a href="index.html" class="menu-item">Feed</a></li>
             <li>
-                <a href="/mainpages/music.html" class="menu-item active">Music</a>
+                <a href="/mainpages/music.html" class="menu-item">Music</a>
                 <ul class="dropdown-menu">
                     <li><a href="/music/releases.html" class="menu-item">Releases</a></li>
-                    <li><a href="/music/beats.html" class="menu-item active">Beats</a></li>
-                    <li><a href="profile.html" class="menu-item">Profile</a></li>
+                    <li><a href="/music/beats.html" class="menu-item">Beats</a></li>
+                    <li><a href="/music/profile.html" class="menu-item">Profile</a></li>
                     <li class="dropdown dropdown-right">
-                        <a href="albums.html" class="menu-item expand-btn">
+                        <a href="/music/albums.html" class="menu-item expand-btn">
                             Albums
                         </a>
                         <ul class="dropdown-menu menu-right sample">
                             <li><a href="#" class="menu-item">#NotAvailable</a></li>
                             <li><a href="#" class="menu-item">#NotAvailable</a></li>
-                          
                         </ul>
                     </li>
 
                 </ul>
             </li>
             <li>
-                <a href="#" class="menu-item">Movies</a>
+                <a href="/mainpages/movies.html" class="menu-item">Movies</a>
                 <ul class="dropdown-menu">
 
                     <li class="dropdown dropdown-right">
-                        <a href="#" class="menu-item expand-btn">
+                        <a href="/movies/releases.html" class="menu-item expand-btn">
                             Releases
                         </a>
                         <ul class="dropdown-menu menu-left sample">
-                            <li><a href="#" class="menu-item">Videos</a></li>
-                            <li><a href="#" class="menu-item">Short Films</a></li>
-                            <li><a href="#" class="menu-item">Skits</a></li>
+                            <li><a href="/movies/release/videos.html" class="menu-item">Videos</a></li>
+                            <li><a href="/movies/release/shortfilms.html" class="menu-item">Short Films</a></li>
+                            <li><a href="/movies/release/skits.html" class="menu-item">Skits</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="#" class="menu-item">Profiles</a></li>
+                    <li><a href="/movies/profile.html" class="menu-item">Profiles</a></li>
 
                 </ul>
             </li>
@@ -71,15 +69,14 @@
                             <section>
                                 <div class="menu-title">Shop</div>
                                 <a href="/modelling/shop.html" class="img-wrapper"><span class="img"><img
-                                            src="/assets/shop1.jpg" alt="Random Image" /></span></a>
+                                            src="assets/shop1.jpg" alt="Random Image" /></span></a>
                             </section>
                         </div>
                         <div class="col">
                             <section>
                                 <div class="menu-title">Profile</div>
                                 <ul class="mega-links">
-                                    <li><a href="#" class="menu-item">Model Kelly</a></li>
-                                    
+                                    <li><a href="#" class="menu-item">model Kelly</a></li>
                                 </ul>
                             </section>
                         </div>
@@ -88,7 +85,7 @@
                 </div>
             </li>
             <li>
-                <a href="/mainpages/dance.html" class="menu-item">Dance</a>
+                <a href="/mainpages/dance.html" class="menu-item active">Dance</a>
                 <ul class="dropdown-menu">
 
                     <li class="dropdown dropdown-right">
@@ -147,6 +144,7 @@
             </li>
             <li><a href="/mainpages/contact.html" class="menu-item">Support</a></li>
         </ul>
+        
         <div class="search_container">
             <form class="search-form">
                 <input type="search" value="" placeholder="Search" class="search-input">
@@ -357,302 +355,65 @@
         </div>
     </div>
     
-
-
-    <section class="artist" id="artist_section">
-        <div class="container">
-            <div class="header">
-                <h1>Beats</h1>
-            </div>
-            <div class="main_artist_card">
-                <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track1.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">2k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">234 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">4k Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">3.5k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">460 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-            </div>
+    <section class="content-hero">
+       <div class="container">
+        <div class="hero-content-text">
+            <h1>Showcase Your Style</h1>
+            <p>Discover the latest trends and opportunities in the modeling world</p>
+            <button class=" btn--width">View Models<i class="ri-arrow-right-line"></i></button>
         </div>
-        <button class="more_btn">See More</button>
-    </section>
-    <section class="artist" id="artist_section">
-        <div class="container">
-          
-            <div class="main_artist_card">
-              
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">234 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">4k Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">3.5k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">460 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-            </div>
+        <div class="video-container">
+            <video src="/assets/video2.mp4" autoplay loop muted style="aspect-ratio: 6 / 8;"></video>
         </div>
-        <button class="more_btn">See More</button>
+       </div>
     </section>
+
+    <section class="scroller_section">
+        
+<div class="scroller" data-speed="fast">
+    <ul class="tag-list scroller__inner">
+      <li>Music</li>
+      <li>Production</li>
+      <li>Promo</li>
+      <li>Mixing</li>
+      <li>Editing</li>
+      <li>Videos</li>
+      <li>Shorts</li>
+    </ul>
+  </div>
   
+  <div class="scroller" data-direction="right" data-speed="slow">
+    <div class="scroller__inner">
+      <img src="/assets/ava.png" alt="" />
+      <img src="/assets/ava2.jpg" alt="" />
+      <img src="/assets/ava3.jpg" alt="" />
+      <img src="/assets/ava4.jpg" alt="" />
+      <img src="/assets/ava6.jpg" alt="" />
+      <img src="/assets/ava7.jpg" alt="" />
 
-
-    <section class="artist">
-        <div class="container">
-            <div class="header">
-                <h1>Popular Genres</h1>
-            </div>
-            <div class="main_artist_card">
-                <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track1.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                      
-                        <div class="title_card">
     
-                            <h1>Pop</h1>
-    
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                   <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>RnB</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>RnB</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                   </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                  <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>Rap</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>Rap</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                  </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                   <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>Afrobeats</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>Afrobeats</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                   </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="title_card">
-    
-                            <h1>Amapiano</h1>
-    
-                        </div>
-                        <div class="title_card">
-                            <p>Amapiano</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
+    </div>
+  </div>
+  <button class="btn--width">Discover us<i class="ri-arrow-right-line"></i></button>
     </section>
 
- 
+    <section>
+        <div class="sect sect--violet ">
+            <img src="https://image.ibb.co/fWyVtb/path3762.png" class="career-img">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="career_title">Discover our creators?</h1>
+                  <h1 class="career_sub">At multiprime, the best team work to provide you the best.</h1>
+                  <a href="#" class="btn btn--white btn--width">View Profiles <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    </section>
+    
+  
    
 
     <footer class="new_footer_area bg_color">
@@ -694,22 +455,23 @@
     </footer>
 
     <script src="../main.js"></script>
-    <script src="/js/music.js"></script>
-    
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
 
 
         // Reveal '.hero_text' from the left
-        ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.hero-content-text h1, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
-        ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+        ScrollReveal().reveal('.hero-content-text p, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
 
-        ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
+        ScrollReveal().reveal('.video-container, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
 
         // Reveal '.owl-carousel' from the bottom with a delay of 700ms
         ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
@@ -790,8 +552,35 @@
         }
 
     </script>
-    
+    <script>
+        const scrollers = document.querySelectorAll(".scroller");
 
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+    </script>
+  
   
 </body>
 </html>

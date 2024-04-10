@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music</title>
-    <link rel="stylesheet" href="/css/music.css">
+    <title>Home</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
-    integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-    ScrollReveal({ reset: true });
-</script>
-</head>
-<body>
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    
 
+</head>
+
+<body>
     <header class="navbar sticky">
 
         <div class="logo">
@@ -29,37 +30,37 @@
                 <a href="/mainpages/music.html" class="menu-item active">Music</a>
                 <ul class="dropdown-menu">
                     <li><a href="/music/releases.html" class="menu-item">Releases</a></li>
-                    <li><a href="/music/beats.html" class="menu-item active">Beats</a></li>
-                    <li><a href="profile.html" class="menu-item">Profile</a></li>
+                    <li><a href="/music/beats.html" class="menu-item">Beats</a></li>
+                    <li><a href="/music/profile.html" class="menu-item active">Profile</a></li>
                     <li class="dropdown dropdown-right">
-                        <a href="albums.html" class="menu-item expand-btn">
+                        <a href="/music/albums.html" class="menu-item expand-btn">
                             Albums
                         </a>
                         <ul class="dropdown-menu menu-right sample">
                             <li><a href="#" class="menu-item">#NotAvailable</a></li>
                             <li><a href="#" class="menu-item">#NotAvailable</a></li>
-                          
+                           
                         </ul>
                     </li>
 
                 </ul>
             </li>
             <li>
-                <a href="#" class="menu-item">Movies</a>
+                <a href="/mainpages/movies.html" class="menu-item">Movies</a>
                 <ul class="dropdown-menu">
 
                     <li class="dropdown dropdown-right">
-                        <a href="#" class="menu-item expand-btn">
+                        <a href="/movies/releases.html" class="menu-item expand-btn">
                             Releases
                         </a>
                         <ul class="dropdown-menu menu-left sample">
-                            <li><a href="#" class="menu-item">Videos</a></li>
-                            <li><a href="#" class="menu-item">Short Films</a></li>
-                            <li><a href="#" class="menu-item">Skits</a></li>
+                            <li><a href="/movies/release/videos.html" class="menu-item">Videos</a></li>
+                            <li><a href="/movies/release/shortfilms.html" class="menu-item">Short Films</a></li>
+                            <li><a href="/movies/release/skits.html" class="menu-item">Skits</a></li>
 
                         </ul>
                     </li>
-                    <li><a href="#" class="menu-item">Profiles</a></li>
+                    <li><a href="/movies/profile.html" class="menu-item">Profiles</a></li>
 
                 </ul>
             </li>
@@ -79,7 +80,7 @@
                                 <div class="menu-title">Profile</div>
                                 <ul class="mega-links">
                                     <li><a href="#" class="menu-item">Model Kelly</a></li>
-                                    
+        
                                 </ul>
                             </section>
                         </div>
@@ -357,303 +358,151 @@
         </div>
     </div>
     
+    
+    
 
 
-    <section class="artist" id="artist_section">
-        <div class="container">
-            <div class="header">
-                <h1>Beats</h1>
+    <section class="game-section">
+        <h2 class="line-title">Featured Profiles</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+            <div class="item active"
+                style="background-image: url(/assets/m4.jpg);">
+                <div class="item-desc">
+                    <h3>Mel Vimin</h3>
+                    <p>Pagming Yemdji Urich, also known by his stage name Nasc V, is a talented undergraduate
+                        software engineering student at the University of Bamenda in Cameroon. In addition to his
+                        academic pursuits, he is also a passionate musical artist, showcasing his creativity and artistry
+                        through his music. With a residence in Bamenda, Nasc V is dedicated to pursuing his dual
+                        passions of software engineering and music, making a name for himself in both fields. With a
+                        unique blend of technical skills and artistic talent, Nasc V is a rising star to watch in the music
+                        industry.</p>
+                        <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
             </div>
-            <div class="main_artist_card">
-                <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track1.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">2k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
+            <div class="item"
+                style="background-image: url(/assets/_DSC5299.jpg);">
+                <div class="item-desc">
+                    <h3>Nasc V</h3>
+                    <p>Pagming Yemdji Urich, also known by his stage name Nasc V, is a talented undergraduate
+                        software engineering student at the University of Bamenda in Cameroon. In addition to his
+                        academic pursuits, he is also a passionate musical artist, showcasing his creativity and artistry
+                        through his music. With a residence in Bamenda, Nasc V is dedicated to pursuing his dual
+                        passions of software engineering and music, making a name for himself in both fields. With a
+                        unique blend of technical skills and artistic talent, Nasc V is a rising star to watch in the music
+                        industry.
+                    </p>
+                    <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+                   
+                </div>
+            </div>
+            <div class="item"
+                style="background-image: url(/assets/MP2\ \(1\).jpg);">
+                <div class="item-desc">
+                    <h3>Z Prime</h3>
+                    <p>
+                        Zama Protus, also known as Z_Prime is a Cameroonian by nationality and also happens to be
+the founder and CEO of Multi_Prime Entertainment, He was born on the 16 of April 1996 of
+Zama Winifred Ngeche and Che Sylvester and has been passionate for Entertainment since he
+was a kid having his first performance at the age of 6. He
+enrolled in to the University (National Polytechnic University Institute) where he attained a
+degree in ports and shipping administration atsight he also took courses in music and theatrical
+performances and is Now running His very own Entertainment company. He belives there's
+more untapped potential to the entertainment industry and is bent on its amplification.
+                    </p>
+                    <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+            <div class="item"
+                style="background-image: url(/assets/P4_edited_1712392243578.jpg);">
+                <div class="item-desc">
+                    <h3>Kelly</h3>
+                    <p>Wenjim Kelly Eyah is an indigen of Batibo born on the 11th of August 2004 of Afuh Kalista E and
+                        of Afuh Simon W. As a passionate Model, she's of hight 1.66m with an Umber skin tone. She
+                        completed Elementary school at GBPS Loum, Secondary and High school at BCHS Loum and
+                        now is an undergraduate at the University of Bamenda. She has as hobbies; Dancing, singing,
+                        shopping, traveling and her favorite color Sky blue, red, black and forest green. Being a Leo she
+                        probably has what it takes to top as a Model.</p>
+                        <a href="#">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+         
+        </div>
+        </div>
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">234 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">4k Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">3.5k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
+        <div class="wrapper">
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">460 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
+            <div class="tower">
+                <div class="signal">
+                    <div class="rings circle animated"></div>
+                </div>
+                <div class="dot circle"></div>
+                <div class="triangle"></div>
+            </div>
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
+            <div class="player circle">
+                <div class="buffering circle animated"></div>
+                <div class="triangle"></div>
+            </div>
+
+            <div class="text">
+                <div class="pulsing animated">Buffering</div>
+            </div>
+
+        </div>
+        <div class="tag-scrollers">
+            <div class="tag-scroller">
+                <ul class="tag-list">
+                    <li>Music Industry</li>
+                    <li>Record Labels</li>
+                    <li>Artists</li>
+                    <li>Music Production</li>
+                    <li>Music Marketing</li>
+                    <li>Songwriting</li>
+                    <li>Music Distribution</li>
+                    <li>Music Licensing</li>
+                    <li>Live Performances</li>
+                    <li>Music Streaming</li>
+                    <li>Music Business</li>
+                    <li>Music Technology</li>
+                    <li>Music Promotion</li>
+                    <li>Music Copyright</li>
+                    <li>Music Management</li>
+                    <li>Music Trends</li>
+                    <li>Music Genres</li>
+                    <li>Music Festivals</li>
+                    <li>Independent Artists</li>
+                    <li>Music Collaboration</li>
+                    <li>Artist Development</li>
+                    <li>Music Education</li>
+                    <li>Music Networking</li>
+                    <li>Music Industry News</li>
+                    <li>Music Performance Rights</li>
+                    <li>Music Revenue Models</li>
+                    <li>Music Publicity</li>
+                </ul>
             </div>
         </div>
-        <button class="more_btn">See More</button>
+
+
     </section>
-    <section class="artist" id="artist_section">
-        <div class="container">
-          
-            <div class="main_artist_card">
-              
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">234 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
 
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">4k Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">3.5k+ Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="info_card">
-                            <p>$24.45</p>
-                            <p class="plays">460 Plays</p>
-                        </div>
-                        <div class="title_card">
-                            <div><span>AD</span></div>
-                            <h1>Heartfealth</h1>
-
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-        <button class="more_btn">See More</button>
-    </section>
-  
-
-
-    <section class="artist">
-        <div class="container">
-            <div class="header">
-                <h1>Popular Genres</h1>
-            </div>
-            <div class="main_artist_card">
-                <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track1.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                      
-                        <div class="title_card">
-    
-                            <h1>Pop</h1>
-    
-                        </div>
-                        <div class="title_card">
-                            <p>Pop</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track2.jpg" alt="Random Image" />
-                    </div>
-                   <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>RnB</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>RnB</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                   </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track3.jpg" alt="Random Image" />
-                    </div>
-                  <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>Rap</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>Rap</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                  </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track4.jpg" alt="Random Image" />
-                    </div>
-                   <div class="card_body">
-                    <div class="title_card">
-    
-                        <h1>Afrobeats</h1>
-    
-                    </div>
-                    <div class="title_card">
-                        <p>Afrobeats</p>
-                       <button><i class="ri-play-circle-line"></i></button> 
-                    </div>
-                   </div>
-                 </div>
-                 <div class="artist_card">
-                    <div class="img_container">
-                        <img src="/assets/track5.jpg" alt="Random Image" />
-                    </div>
-                    <div class="card_body">
-                        <div class="title_card">
-    
-                            <h1>Amapiano</h1>
-    
-                        </div>
-                        <div class="title_card">
-                            <p>Amapiano</p>
-                           <button><i class="ri-play-circle-line"></i></button> 
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-    </section>
 
  
-   
+
+
+
+
+
+
+
+
+
+  
+
+    
+
 
     <footer class="new_footer_area bg_color">
         <div class="footer_container">
@@ -692,106 +541,221 @@
         </div>
         <p class="copyright">Copyright &copy; Multiprime 2023. All rights reserved</p>
     </footer>
-
-    <script src="../main.js"></script>
-    <script src="/js/music.js"></script>
-    
+    <script src="/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
 
 
-        // Reveal '.hero_text' from the left
-        ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
-
-        // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
-        ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
-
-        ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
-
-        // Reveal '.owl-carousel' from the bottom with a delay of 700ms
-        ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
-
-        $(".custom-carousel").owlCarousel({
-            autoWidth: true,
-            loop: true
-        });
-        $(document).ready(function () {
-            $(".custom-carousel .item").click(function () {
-                $(".custom-carousel .item").not($(this)).removeClass("active");
-                $(this).toggleClass("active");
-            });
-        });
-
-        /*	CHECK FOR PREFERED REDUCED MOTION
-                AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
-                SPLITTING THE LIST ELEMENT INTO MULTIPLE
-                LISTS OR APPLYING THE SCROLL ANIMATION
-        */
-        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-        if (mediaQuery && !mediaQuery.matches) {
-            const tagScroller = document.querySelector(".tag-scroller");
-            const allTags = tagScroller.querySelectorAll("li");
-
-            function createElement(tagName, className = "") {
-                const elem = document.createElement(tagName);
-                elem.className = className;
-                return elem;
-            }
-
-            function scrollersFrom(elements, numColumns = 2) {
-                const fragment = new DocumentFragment();
-                elements.forEach((element, i) => {
-                    const column = i % numColumns;
-                    const children = fragment.children;
-                    if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
-                    children[column].appendChild(element);
-                });
-                return fragment;
-            }
-
-            /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
-                    AND CALL THE ANIMATION
-            */
-            const scrollers = scrollersFrom(allTags, 2);
-            tagScroller.innerHTML = "";
-            tagScroller.appendChild(scrollers);
-            addScrolling();
-
-            /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
-                    CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
-                    FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
-                    BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
-                    MOVE AT THE SAME RATE OF SPEED
-                	
-                    DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
-                    LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
-                    TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
-                    WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
-                	
-                    THIS COULD OF COURSE BE ADDED TO THE SCRIPT
-                    BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
-                    LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
-            */
-            function addScrolling() {
-                tagScroller.classList.add("scrolling");
-                document.querySelectorAll(".tag-list").forEach((tagList) => {
-                    const scrollContent = Array.from(tagList.children);
-                    scrollContent.forEach((listItem) => {
-                        const clonedItem = listItem.cloneNode(true);
-                        clonedItem.setAttribute("aria-hidden", true);
-                        tagList.appendChild(clonedItem);
-                    });
-                    tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
-                });
-            }
-        }
-
-    </script>
+            // Reveal '.hero_text' from the left
+            ScrollReveal().reveal('.hero_text, .site__title, .main_title, .promo .main_container .img_container img, .footer_container .links', { origin: 'left', distance: '50px', duration: 1000 });
     
+            // Reveal '.wrapper' and '.line-title' from the right with a delay of 500ms
+            ScrollReveal().reveal('.wrapper, .site__subtitle, .list ', { origin: 'right', distance: '30px', duration: 1000, delay: 500 });
+    
+            ScrollReveal().reveal('.hero_text, .artist .container, .artist .container .header h1', { origin: 'left', distance: '50px', duration: 1000 });
+    
+            // Reveal '.owl-carousel' from the bottom with a delay of 700ms
+            ScrollReveal().reveal('.owl-carousel, .custom-carousel, .artist .container .header h1, .artist_card, .promo .main_container a, .pricingTable-firstTable_table:not(:last-of-type)', { origin: 'bottom', distance: '50px', duration: 1000, delay: 700 });
+    
+            $(".custom-carousel").owlCarousel({
+                autoWidth: true,
+                loop: true
+            });
+            $(document).ready(function () {
+                $(".custom-carousel .item").click(function () {
+                    $(".custom-carousel .item").not($(this)).removeClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+    
+            /*	CHECK FOR PREFERED REDUCED MOTION
+                    AND IF SO, DO NOT RUN ANY OF THE SCRIPTS
+                    SPLITTING THE LIST ELEMENT INTO MULTIPLE
+                    LISTS OR APPLYING THE SCROLL ANIMATION
+            */
+            const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+            if (mediaQuery && !mediaQuery.matches) {
+                const tagScroller = document.querySelector(".tag-scroller");
+                const allTags = tagScroller.querySelectorAll("li");
+    
+                function createElement(tagName, className = "") {
+                    const elem = document.createElement(tagName);
+                    elem.className = className;
+                    return elem;
+                }
+    
+                function scrollersFrom(elements, numColumns = 2) {
+                    const fragment = new DocumentFragment();
+                    elements.forEach((element, i) => {
+                        const column = i % numColumns;
+                        const children = fragment.children;
+                        if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
+                        children[column].appendChild(element);
+                    });
+                    return fragment;
+                }
+    
+                /*	SPLIT THE LIST ELEMENT INTO TWO LISTS
+                        AND CALL THE ANIMATION
+                */
+                const scrollers = scrollersFrom(allTags, 2);
+                tagScroller.innerHTML = "";
+                tagScroller.appendChild(scrollers);
+                addScrolling();
+    
+                /*	ADD scrolling CLASS TO THE WRAPPER ELEMENT,
+                        CLONE EACH LIST ITEM TO MAKE THE LIST LONG ENOUGH
+                        FOR INFINITE SCROLL AND THEN CALCULATE THE DURATION
+                        BASED ON WIDTH OF EACH SCROLLER TO MAKE THEM
+                        MOVE AT THE SAME RATE OF SPEED
+                        
+                        DEPENDING ON THE WIDTH OF .tag-scrollers, THE NUMBER OF
+                        LIST ITEMS AND THEIR INDIVIDUAL WIDTH, YOU MIGHT NEED
+                        TO CLONE THEM TWO TIMES EACH TO BE SURE EACH .tag-scroller
+                        WILL BE WIDE ENOUGH TO SUPPORT INFINITE SCROLL
+                        
+                        THIS COULD OF COURSE BE ADDED TO THE SCRIPT
+                        BUT FOR OUR USE CASE, WE KNOW THE MINIMUM NUMBER OF
+                        LIST ELEMENTS WILL BE ENOUGH FOR ONE CLONE EACH
+                */
+                function addScrolling() {
+                    tagScroller.classList.add("scrolling");
+                    document.querySelectorAll(".tag-list").forEach((tagList) => {
+                        const scrollContent = Array.from(tagList.children);
+                        scrollContent.forEach((listItem) => {
+                            const clonedItem = listItem.cloneNode(true);
+                            clonedItem.setAttribute("aria-hidden", true);
+                            tagList.appendChild(clonedItem);
+                        });
+                        tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
+                    });
+                }
+            }
+    
+        </script>
+    <script>
+        //slideshow style interval
+var autoSwap = setInterval( swap,7000);
 
+//pause slideshow and reinstantiate on mouseout
+$('.carousel, .slider').hover(
+  function () {
+    clearInterval(autoSwap);
+}, 
+  function () {
+   autoSwap = setInterval( swap,7000);
+});
+
+//global variables
+var items = [];
+var startItem = 1;
+var position = 0;
+var itemCount = $('.carousel>li').length;
+var leftpos = itemCount;
+var resetCount = itemCount;
+
+//unused: gather text inside items class
+$('.carousel>li').each(function(index) {
+    items[index] = $(this).text();
+});
+
+//swap images function
+function swap(action) {
+  var direction = action;
   
+  //moving carousel backwards
+  if(direction == 'counter-clockwise') {
+    var leftitem = $('.left-pos').attr('id') - 1;
+    if(leftitem == 0) {
+      leftitem = itemCount;
+    }
+    
+    $('.right-pos').removeClass('right-pos').addClass('back-pos');
+    $('.main-pos').removeClass('main-pos').addClass('right-pos');
+    $('.left-pos').removeClass('left-pos').addClass('main-pos');
+    $('#'+leftitem+'').removeClass('back-pos').addClass('left-pos');
+    
+    startItem--;
+    if(startItem < 1) {
+      startItem = itemCount;
+    }
+  }
+  
+  //moving carousel forward
+  if(direction == 'clockwise' || direction == '' || direction == null ) {
+    function pos(positionvalue) {
+      if(positionvalue != 'leftposition') {
+        //increment image list id
+        position++;
+        
+        //if final result is greater than image count, reset position.
+        if((startItem+position) > resetCount) {
+          position = 1-startItem;
+        }
+      }
+    
+      //setting the left positioned item
+      if(positionvalue == 'leftposition') {
+        //left positioned image should always be one left than main positioned image.
+        position = startItem - 1;
+      
+        //reset last image in list to left position if first image is in main position
+        if(position < 1) {
+          position = itemCount;
+        }
+      }
+   
+      return position;
+    }  
+  
+   $('#'+ startItem +'').removeClass('main-pos').addClass('left-pos');
+   $('#'+ (startItem+pos()) +'').removeClass('right-pos').addClass('main-pos');
+   $('#'+ (startItem+pos()) +'').removeClass('back-pos').addClass('right-pos');
+   $('#'+ pos('leftposition') +'').removeClass('left-pos').addClass('back-pos');
+
+    startItem++;
+    position=0;
+    if(startItem > itemCount) {
+      startItem = 1;
+    }
+  }
+}
+
+//next button click function
+$('#next').click(function() {
+  swap('clockwise');
+});
+
+//prev button click function
+$('#prev').click(function() {
+  swap('counter-clockwise');
+});
+
+//if any visible items are clicked
+$('.items').click(function() {
+  if($(this).attr('class') == 'items left-pos') {
+     swap('counter-clockwise'); 
+  }
+  else {
+    swap('clockwise'); 
+  }
+});
+    </script>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+        
 </body>
+
 </html>

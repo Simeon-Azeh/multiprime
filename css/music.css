@@ -493,3 +493,225 @@ border-radius: 5px;
   margin-top: 10px;
 
 }
+
+/* Movie page */
+.content-hero {
+  padding: 20px 80px;
+}
+.content-hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.content-hero .container .video-container {
+  width: 50%;
+  margin-right: 40px;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 8px;
+}
+.content-hero .container .video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.content-hero .container .hero-content-text {
+  width: 60%;
+  padding: 0 20px;
+}
+.content-hero .container .hero-content-text h1 {
+  font-size: 2em;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.content-hero .container .hero-content-text p {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #8198ae;
+  margin-top: 5px;
+}
+
+.scroller {
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+
+
+.scroller_section {
+  display: grid;
+  min-block-size: 50vh;
+  place-content: center;
+  font-size: 1.125rem;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroller_section .tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.scroller_section .tag-list li {
+  padding: 1rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none !important;
+
+}
+
+
+.clock {
+	margin: auto;
+	text-align: center;
+}
+.clock__word {
+	display: inline;
+	font-weight: 600;
+  color: var(--primary-color);
+  font-size: 26px;
+  opacity: 0.8;
+}
+.clock__word:empty {
+	display: none;
+}
+.clock__word--bold {
+	font-weight: 600;
+}
+.clock__word--fade-fly-in {
+	animation: fade-fly-in 0.6s cubic-bezier(0.65,0,0.35,1);
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+/* Animations */
+@keyframes fade-fly-in {
+	from { opacity: 0; transform: translateY(100%); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+
+.rel_featured {
+  padding: 20px 80px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.rel_featured h1 {
+  margin-bottom: 30px; /* Adjust margin as needed */
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.rel_featured .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px; /* Adjust gap between cards as needed */
+  justify-items: center;
+}
+
+.rel_featured .block {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.rel_featured .video_container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Adjust border radius as needed */
+ 
+}
+
+.rel_featured .video_container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Adjust border radius as needed */
+}
+
+.rel_featured .block_body {
+  padding: 20px; /* Adjust padding as needed */
+   /* Adjust background color as needed */
+  border-radius: 0 0 10px 10px; /* Adjust border radius as needed */
+}
+.rel_featured .block_body  h1 {
+  font-size: 1.5em; /* Adjust font size as needed */
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 0;
+  margin-bottom: 5px;
+
+}
+.rel_featured .block_body p {
+  font-size: 0.9em; /* Adjust font size as needed */
+  margin: 0;
+  font-weight: 500;
+  color: #8198ae;
+  line-height: 1.3;
+}
+.block_footer .post-time {
+  font-size: 0.8em;
+  margin-top: 20px !important;
+  font-weight: 400;
+  opacity: 0.6 !important;
+  color: var(--secondary-color) !important;
+}
