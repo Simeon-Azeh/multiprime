@@ -470,6 +470,15 @@
 
 
     </section>
+    <section class="promo">
+        <h1 class="main_title">Revisit our website launch</h1>
+        <div class="main_vid_container">
+            <div class="vid_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PFgrT0-xiGc?si=Pn8Exl6iN36eDvWH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+    </section>
     <section class="artist" id="artist_section">
         <div class="container">
             <div class="header">
@@ -3861,6 +3870,20 @@ That's right, instead of the regular 60k, you can save big with our unbeatable o
     </div>
   </section>
 
+  <div id="overlay">
+    <div id="overlay-content">
+      <span id="close-overlay">&times;</span>
+      <div class="img_container">
+        <img src="assets/gift.gif" alt="">
+      </div>
+      <h1>Exciting deal for all artist</h1>
+      <p>
+        Are you an aspiring artist ready to take the music industry by storm? Look no further than Multi_Prime Company! We're excited to announce an exclusive deal for the first 10 talented individuals who are eager to make their mark in the music world.
+      </p>
+     <a href="/mainpages/blog.html#blog_five">Learn More <i class="ri-arrow-right-circle-line"></i></a>
+    </div>
+  </div>
+  
 
   
 
@@ -4117,6 +4140,28 @@ $('.items').click(function() {
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+  var overlay = document.getElementById('overlay');
+  var closeOverlay = document.getElementById('close-overlay');
+
+  // Show the overlay
+  overlay.style.display = 'block';
+
+  // Close the overlay after 10 seconds if not clicked
+  setTimeout(function() {
+    if (overlay.style.display === 'block') {
+      overlay.style.display = 'none';
+    }
+  }, 10000);
+
+  // Close the overlay if the close icon is clicked
+  closeOverlay.addEventListener('click', function() {
+    overlay.style.display = 'none';
+  });
+});
+
         </script>
         
 </body>

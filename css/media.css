@@ -487,6 +487,21 @@
     .rel_featured {
         padding: 20px 0;
     }
-    
+    #overlay-content {
+       
+        width: 90%;
+    }
+    .main_vid_container {
+        width: 100%;
+        height: 50vh;
+    }
+   
+    .vid_container {
+        width: 100%; /* Adjust as needed */
+      }
+      .vid_container iframe {
+        width: 100%;
+       aspect-ratio: 16 / 9;
+      }
 
 }
