@@ -362,11 +362,10 @@
     <section id="hero" class="section">
         <div class="container">
             <div class="hero_text">
-                <h1>Dream Big, Dream Music</h1>
-                <p>Your first hit starts here, Dive into our world of endless entertainment, wether you're an artist, a
-                    listener, a model or a designer, we've got something for you</p>
+                <h1>Nothing but the best in <span>Prime Entertainment</span></h1>
+                <p>Step into a world where music, modeling, and dance collide in a symphony of non-stop excitement! </p>
             </div>
-            <button>Start Listening</button>
+            <button onclick= "scrollToArtist()"> <a href = "/mainpages/music.html">Explore<i class="ri-arrow-right-circle-line"></i><a></button>
         </div>
     </section>
     <section class="game-section">
@@ -380,17 +379,8 @@
                         <a href="#">Read More <i class="ri-arrow-right-circle-line"></i></a>
                 </div>
             </div>
+          
             <div class="item active"
-                style="background-image: url(assets/_DSC5299.jpg);">
-                <div class="item-desc">
-                    <h3>Nasc V</h3>
-                    <p>Pagming Yemdji Urich, also known as Nasc V, is a talented undergraduate software engineering student at the University of Bamenda in Cameroon. Alongside his academic pursuits, he passionately showcases his creativity as a musical artist. With residence in Bamenda, Nasc V ambitiously pursues his dual passions, promising a rising star in both software engineering and music.
-                    </p>
-                    <a href="#">Read More <i class="ri-arrow-right-circle-line"></i></a>
-                   
-                </div>
-            </div>
-            <div class="item"
                 style="background-image: url(assets/MP2\ \(1\).jpg);">
                 <div class="item-desc">
                     <h3>Z Prime</h3>
@@ -430,7 +420,7 @@
             </div>
 
             <div class="text">
-                <div class="pulsing animated">Buffering</div>
+                <div class="pulsing animated">Listen to our best tracks with no Buffering</div>
             </div>
 
         </div>
@@ -444,26 +434,27 @@
                     <li>Music Marketing</li>
                     <li>Songwriting</li>
                     <li>Music Distribution</li>
-                    <li>Music Licensing</li>
+                    <li>Modeling Events</li>
                     <li>Live Performances</li>
                     <li>Music Streaming</li>
-                    <li>Music Business</li>
-                    <li>Music Technology</li>
-                    <li>Music Promotion</li>
-                    <li>Music Copyright</li>
-                    <li>Music Management</li>
-                    <li>Music Trends</li>
+                    <li>Modeling Agencies</li>
+                    <li>Comedy Skits</li>
+                    <li>Drama Skits</li>
+                    <li>Short Films</li>
+                    <li>Web Series</li>
                     <li>Music Genres</li>
                     <li>Music Festivals</li>
                     <li>Independent Artists</li>
                     <li>Music Collaboration</li>
                     <li>Artist Development</li>
-                    <li>Music Education</li>
-                    <li>Music Networking</li>
-                    <li>Music Industry News</li>
-                    <li>Music Performance Rights</li>
-                    <li>Music Revenue Models</li>
-                    <li>Music Publicity</li>
+                    <li>Dance Styles</li>
+                    <li>Dance Choreography</li>
+                    <li>Dance Performances</li>
+                    <li>Dance Competitions</li>
+                    <li>Web Series</li>
+                    <li>Sketch Comedy</li>
+                    <li>Improv</li>
+                    <li>Online Videos</li>
                 </ul>
             </div>
         </div>
@@ -3876,11 +3867,15 @@ That's right, instead of the regular 60k, you can save big with our unbeatable o
       <div class="img_container">
         <img src="assets/gift.gif" alt="">
       </div>
-      <h1>Exciting deal for all artist</h1>
+      <h1>Join our newsletter</h1>
       <p>
-        Are you an aspiring artist ready to take the music industry by storm? Look no further than Multi_Prime Company! We're excited to announce an exclusive deal for the first 10 talented individuals who are eager to make their mark in the music world.
+      Be the first to know about our exciting deals and offers
       </p>
-     <a href="/mainpages/blog.html#blog_five">Learn More <i class="ri-arrow-right-circle-line"></i></a>
+      <form name="submit-to-second-google-sheet">
+        <input type="email" name="Email" placeholder="Email">
+        <input type="submit" value="Subscribe">
+    </form>
+    <span id="subscribe_msg"></span>
     </div>
   </div>
   
@@ -3895,33 +3890,33 @@ That's right, instead of the regular 60k, you can save big with our unbeatable o
             <div class="newsletter">
                 <h1>Get in touch</h1>
                 <p>Don't miss our exciting offers!</p>
-                <form action="">
-                    <input type="email" placeholder="Email">
+                <form name="submit-to-google-sheet">
+                    <input type="email" name="Email" placeholder="Email">
                     <input type="submit" value="Subscribe">
                 </form>
+                <span id="msg"></span>
             </div>
             <div class="links">
                 <h1>Quick Links</h1>
-                <a href="#">Music</a>
-                <a href="#">Beats</a>
-                <a href="#">Videos</a>
-                <a href="#">Models</a>
-                <a href="#">Blog</a>
+                <a href="/mainpages/music.html">Music</a>
+                <a href="/music/beats.html">Beats</a>
+                <a href="/movies/release/videos.html">Videos</a>
+                <a href="/mainpages/modelling.html">Models</a>
+                <a href="/mainpages/blog.html">Blog</a>
             </div>
             <div class="links">
                 <h1>Help</h1>
-                <a href="#">FAQs</a>
-                <a href="#">Term & conditions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Contact</a>
+                <a href="/mainpages/contact.html#faqsss">FAQs</a>
+                <a href="terms.html">Term & conditions</a>
+                <a href="privacypolicy.html">Privacy Policy</a>
+                <a href="/mainpages/contact.html">Contact</a>
                 <a href="#">Subscription</a>
             </div>
             <div class="follow">
                 <h1>Follow Us</h1>
-                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-
+                <a href="https://www.facebook.com/profile.php?id=61555948208462" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/multi_prime237?igsh=MWdyNnY2eWkxdzd6dA==" target="_blank"><i class="ri-twitter-fill"></i></a>
+                <a href="https://youtube.com/@multiprime8986?si=LagFvgkNB82135en?sub_confirmation=1" target="_blank"><i class="ri-youtube-fill"></i></a>
             </div>
 
         </div>
@@ -4154,7 +4149,7 @@ $('.items').click(function() {
     if (overlay.style.display === 'block') {
       overlay.style.display = 'none';
     }
-  }, 10000);
+  }, 20000);
 
   // Close the overlay if the close icon is clicked
   closeOverlay.addEventListener('click', function() {
@@ -4163,6 +4158,7 @@ $('.items').click(function() {
 });
 
         </script>
+    <script src="msg.js"></script>
         
 </body>
 

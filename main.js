@@ -66,34 +66,38 @@
     // Hero section
 
     document.addEventListener("DOMContentLoaded", function() {
-      var mediaList = [
-        
-          { type: 'image', src: './assets/image1.jpg' }, // Image sources
-          { type: 'image', src: './assets/image2.jpg' },
-          { type: 'image', src: './assets/image3.jpg' }
-      ];
-  
-      var index = 0;
-  
-      function changeMedia() {
-          var media = mediaList[index];
-          index = (index + 1) % mediaList.length;
-  
-          var heroContainer = document.querySelector('#hero .container');
-          
-          if (media.type === 'video') {
-              heroContainer.innerHTML = '<div class="video-container"><video autoplay muted loop id="bgVideo"><source src="' + media.src + '" type="video/mp4"></video></div>';
-          } else if (media.type === 'image') {
-              document.getElementById('hero').style.backgroundImage = 'url(' + media.src + ')';
-              heroContainer.innerHTML = '<div class="hero_text"><h1>Dream Big, Dream Music</h1><p>Your first hit starts here, Dive into our world of endless entertainment, wether you"re an artist, <br>a listener, a model or a designer, we"ve got something for you</p><button>Start Listening<i class="ri-play-circle-line"></i></button></div>';
-          }
-      }
-  
-      changeMedia(); // Initial background change
-  
-      setInterval(changeMedia, 5000); // Change background every 5 seconds
-  });
-
+        var mediaList = [
+            { type: 'image', src: './assets/image1.jpg' },
+            { type: 'image', src: './assets/image2.jpg' },
+            { type: 'image', src: './assets/image3.jpg' }
+        ];
+    
+        var index = 0;
+    
+        function changeMedia() {
+            var media = mediaList[index];
+            index = (index + 1) % mediaList.length;
+    
+            var heroContainer = document.querySelector('#hero .container');
+    
+            if (media.type === 'video') {
+                heroContainer.innerHTML = '<div class="video-container"><video autoplay muted loop id="bgVideo"><source src="' + media.src + '" type="video/mp4"></video></div>';
+            } else if (media.type === 'image') {
+                document.getElementById('hero').style.backgroundImage = 'url(' + media.src + ')';
+                heroContainer.innerHTML = '<div class="hero_text"><h1>Nothing but the best in<br> <span>Prime<span> Entertainment</h1><p>Step into a world where music, modeling, and dance collide in a symphony of non-stop excitement!  </p><button onclick= "scrollToArtist()"> <a href = "/mainpages/music.html">Explore<i class="ri-arrow-right-circle-line"></i><a></button></div>';
+            }
+        }
+    
+        function scrollToArtist() {
+            var artistSection = document.getElementById('artist_section');
+            artistSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    
+        changeMedia(); // Initial background change
+    
+        setInterval(changeMedia, 5000); // Change background every 5 seconds
+    });
+    
   
   
 

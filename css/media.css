@@ -267,7 +267,16 @@
         height: 80vh;
     }
     .hero_text {
-        margin-top: -80px;
+        margin-top: 0px;
+    }
+    .hero_text h1 {
+        font-size: 26px !important;
+        line-height: 35px !important;
+    }
+    .hero_text p {
+        font-size: 1.2em !important;
+        padding: 0;
+        font-weight: 400 !important;
     }
     .artist {
         padding: 0px;
