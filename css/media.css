@@ -260,6 +260,28 @@
         width: 100%;
         
     }
+    .modalDialog > div {
+        flex-direction: column;
+        padding-top: 40px;
+        width: 100%;
+       
+    }
+    .track-cover {
+        width: 100%;
+        width: 200px;
+        margin: 0 auto;
+        height: 40%;
+    }
+    audio {
+        display: flex;
+        width: 400px;
+        height: 54px;
+        margin: 10px auto;
+        border-radius: none !important;
+    }
+    .purchase-button {
+        margin-left: -10px;
+    }
 }
     @media only screen and (max-width: 667px) {
 
@@ -512,5 +534,32 @@
         width: 100%;
        aspect-ratio: 16 / 9;
       }
-
+      .mod_but {
+       margin: 0 auto;
+      }
+      audio {
+        display: flex;
+        width: 280px;
+        height: 54px;
+        margin: 10px auto;
+        border-radius: none !important;
+    }
+    .modalDialog > div {
+        flex-direction: column;
+        padding-top: 80px;
+        width: 100%;
+        padding: 80px 20px;
+    }
+    .close_mod {
+        top: 60px;
+        right: 10px;
+    }
+    .mod_content p {
+        font-size: 14px;
+        margin-bottom: 2px;
+        font-weight: 400;
+        color: #6e768d;
+        line-height: 1.5;
+    } 
+  
 }
