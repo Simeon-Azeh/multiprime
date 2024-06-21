@@ -2100,7 +2100,7 @@ h3 {
 }
 
 .btnlinks {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--primary-color);
 }
 
@@ -2250,7 +2250,7 @@ a:active {
 .main_title {
   font-size: 1.3em;
   color: var(--secondary-color);
-  font-weight: 600;
+  font-weight: 500 !important;
   text-align: center;
   margin: 20px;
 }
@@ -3913,7 +3913,8 @@ color: #EA4436;
   border-radius: 5px;
 }
 .purchase-button:hover {
-  background-color: #45a049;
+  background-color: #ff825c;
+  color: #fff !important;
 }
 
 .mod_content p {

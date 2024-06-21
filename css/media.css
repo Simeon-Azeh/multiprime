@@ -282,6 +282,13 @@
     .purchase-button {
         margin-left: -10px;
     }
+    .container_button {
+        left: 25%;
+    }
+    .profile_details {
+        padding: 0px;
+        width: 60%;
+    } 
 }
     @media only screen and (max-width: 667px) {
 
@@ -561,5 +568,20 @@
         color: #6e768d;
         line-height: 1.5;
     } 
-  
+
+    .rel_featured_profile {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .profile_imgg {
+        width: 100%;
+        gap: 10px;
+    }
+    .profile_details {
+        width: 100%;
+    }
+    .container_button {
+        left: 50%;
+        top: 57%;
+    } 
 }
